@@ -13,11 +13,19 @@ const FooterInformation = styled.div`
   padding-top: 2em;
   padding-bottom: 2em;
 `
+const PowerByReact = styled.div`
+
+`
 
 const Footer = () => (
+  <>
     <FooterInformation>
       2023 - Développé et designé par Océane VILLENEUVE
     </FooterInformation>
+    <PowerByReact>
+
+    </PowerByReact>
+  </>
 )
 
 export default Footer;

@@ -1,7 +1,14 @@
-import React from 'react';
+import React from 'react'
+import styled from 'styled-components';
 
-const Contact = () => {
-  return <div>contact</div>;
-};
+const PageContact = styled.div`
+  min-height: 100vh;
+`
+
+const Contact = () => (
+  <PageContact>
+
+  </PageContact>
+)
 
 export default Contact;
