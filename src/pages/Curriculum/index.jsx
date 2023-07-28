@@ -3,9 +3,7 @@ import styled from 'styled-components'
 import LevelEnglish from '../../assets/level_english.png'
 import LevelFrench from '../../assets/level_french.png';
 
-const PageCurri = styled.div`
-  min-height: 100vh;
-`
+
 const Bio = styled.p`
   font-family: 'Space Mono',monospace;
   font-size: 11px;
@@ -14,9 +12,11 @@ const Bio = styled.p`
 `
 const FlexContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
 `
 const ColumnContainer = styled.div`
-  display: column;
+  width: 50%;
+  padding: 0 40px;
 `
 
 const TitleCurriculum = styled.div`
@@ -24,15 +24,15 @@ const TitleCurriculum = styled.div`
   font-family: 'Space Mono',monospace;
   font-size: 10px;
   padding: 5px;
-  margin: 19px 4em 19px 4em;
-  width: 38em;
+  margin: 19px 0;
+  width: 100%;
   text-align: center;
 `
 const TextCurriculum = styled.p`
   font-family: 'Roboto Mono',monospace;
   font-size: 8px;
-  margin-left: 6em;
-  margin-right: 6em;
+  margin-left: 2em;
+  margin-bottom: 3em;
 `
 const PuceText = styled.li`
   font-family: 'Roboto Mono',monospace;
@@ -43,17 +43,17 @@ const PuceText = styled.li`
 
 const LanguageLevelEnglish = styled.img`
   width: 45px;
-  margin-left: 33em;
+  margin-left: 43em;
   margin-top: -4px;
 `
 const LanguageLevelFrench = styled.img`
   width: 43px;
-  margin-left: 258PX;
+  margin-left: 340PX;
   margin-top: -4px;
 `
 
 const Curriculum = () => (
-  <PageCurri>
+  <>
     <Bio>
       Désirant réorienter ma carrière dans le développement web Front-end,je viens d'achever le bootcamp du Wagon à
       Nantes. Je recherche mon premier emploi afin de pouvoir mettre en pratique mes compétences et accroître mes
@@ -152,7 +152,7 @@ const Curriculum = () => (
         </TextCurriculum>
       </ColumnContainer>
     </FlexContainer>
-  </PageCurri>
+  </>
 )
 
 export default Curriculum;
