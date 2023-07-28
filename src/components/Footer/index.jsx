@@ -6,6 +6,7 @@ const FooterContainer = styled.div`
   padding-top: 2em;
   padding-bottom: 2em;
   border-top: 0.5px solid black;
+  position: relative;
 `
 
 const FooterInformation = styled.div`
@@ -18,7 +19,7 @@ const FooterInformation = styled.div`
 const PowerByReact = styled.div`
   font-family: 'Pinyon Script',cursive;
   position: absolute;
-  bottom: -84px;
+  bottom: 28px;
   right: 5em;
 `
 const ReactLogoStyled = styled.img`
@@ -26,7 +27,7 @@ const ReactLogoStyled = styled.img`
   width: 36px;
   position: absolute;
   object-fit: cover;
-  bottom: -7px;
+  bottom: -3px;
   right: -40px;
 `
 

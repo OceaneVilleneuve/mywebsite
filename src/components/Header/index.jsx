@@ -1,14 +1,17 @@
 import styled from 'styled-components'
-import BannerCurri from '../../assets/banner_curri.jpg'
+import bannerCurri from '../../assets/banner_curri.jpg'
 import ProfilPicture from '../../assets/profil_picture.jpg'
+import Portfolio from '../../assets/portfolio.jpg'
+import Contact from '../../assets/contact.jpg'
 import { FaLocationDot } from "react-icons/fa6";
+import { useLocation } from 'react-router-dom';
 
 const Column = styled.div`
   display: column;
 `
 
 const HomeBanner = styled.div`
-  background-image: url(${BannerCurri});
+  background-image: url(${(props) => props.$bannerCurri});
   background-size: cover;
   height: 9em;
   width: 100%;
@@ -55,8 +58,21 @@ const Location = styled.div `
   font-size: 12px;
 `
 
-const Header=() => (
-  <HomeBanner>
+const Header=() => {
+  const location = useLocation();
+
+  const getBackgroundPicture = (pathname) => {
+    if (pathname==="/contact") {
+      return Contact;
+    }
+    if (pathname==="/portfolio") {
+      return Portfolio;
+    }
+      return bannerCurri;
+  }
+
+  return (
+  <HomeBanner $bannerCurri={getBackgroundPicture(location.pathname)}>
     <Column>
       <Logo>Océane Villeneuve</Logo>
       <TitleDescription>Développeuse web Full-stack junior</TitleDescription>
@@ -71,6 +87,7 @@ const Header=() => (
       </FlexFaAndCity>
     </Column>
   </HomeBanner>
-)
+  )
+};
 
 export default Header
