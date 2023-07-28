@@ -126,12 +126,12 @@ const Curriculum = () => (
             <span style={{color: "#393939"}}>| Nantes, France</span>
           </p>
           <ul>
-              <PuceText>Wireframe et design complet sur Figma. </PuceText>
-              <PuceText>Développement front-end : CSS, HTML, SASS et JavaScript. </PuceText>
-              <PuceText>Développement back-end : PostgreSQL, Ruby on Rails, ActiveRecord. </PuceText>
-              <PuceText>Création d'une base de données. </PuceText>
-              <PuceText>Pair programming. </PuceText>
-              <PuceText>Création, développement et production d'une application.  </PuceText>
+            <PuceText>Wireframe et design complet sur Figma. </PuceText>
+            <PuceText>Développement front-end : CSS, HTML, SASS et JavaScript. </PuceText>
+            <PuceText>Développement back-end : PostgreSQL, Ruby on Rails, ActiveRecord. </PuceText>
+            <PuceText>Création d'une base de données. </PuceText>
+            <PuceText>Pair programming. </PuceText>
+            <PuceText>Création, développement et production d'une application.  </PuceText>
           </ul>
           <p>
             <b>Factrice,</b> <span style={{color: "#536289", fontStyle: "italic"}}>Adecco Industrie </span>
