@@ -6,9 +6,9 @@ import LevelFrench from '../../assets/level_french.png';
 
 const Bio = styled.p`
   font-family: 'Space Mono',monospace;
-  font-size: 11px;
+  font-size: 13px;
   text-align: center;
-  margin: 53px 93px 33px;
+  margin: 61px 93px 51px;
 `
 const FlexContainer = styled.div`
   display: flex;
@@ -16,13 +16,13 @@ const FlexContainer = styled.div`
 `
 const ColumnContainer = styled.div`
   width: 50%;
-  padding: 0 40px;
+  padding: 0 45px;
 `
 
 const TitleCurriculum = styled.div`
   background-color: #CDBACE;
   font-family: 'Space Mono',monospace;
-  font-size: 10px;
+  font-size: 12px;
   padding: 5px;
   margin: 19px 0;
   width: 100%;
@@ -30,25 +30,26 @@ const TitleCurriculum = styled.div`
 `
 const TextCurriculum = styled.div`
   font-family: 'Roboto Mono',monospace;
-  font-size: 8px;
+  font-size: 12px;
   margin-left: 2em;
   margin-bottom: 3em;
+  margin-right: 2em;
 `
 const PuceText = styled.li`
   font-family: 'Roboto Mono',monospace;
-  font-size: 8px;
+  font-size: 12px;
   font-style: italic;
   margin-right: 6em;
 `
 
 const LanguageLevelEnglish = styled.img`
   width: 45px;
-  margin-left: 43em;
+  margin-left: 24em;
   margin-top: -4px;
 `
 const LanguageLevelFrench = styled.img`
   width: 43px;
-  margin-left: 340PX;
+  margin-left: 282px;
   margin-top: -4px;
 `
 

@@ -11,7 +11,7 @@ const NavContainer = styled.nav`
 `
 const StyledLink = styled(Link)`
   font-family: 'Roboto Mono',monospace;
-  font-size: 11px;
+  font-size: 13px;
   padding: 7px;
   border: 0.5px solid black;
   width: 100%;

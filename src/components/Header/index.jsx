@@ -22,7 +22,7 @@ const HomeBanner = styled.div`
 const Logo = styled.div`
   font-family: 'Pinyon Script',cursive;
   color: black;
-  font-size: 35px;
+  font-size: 39px;
   font-weight: normal;
   padding-top: 46px;
   padding-left: 67px;
@@ -31,7 +31,7 @@ const Logo = styled.div`
 const TitleDescription = styled.div`
   font-family: 'Space Mono',monospace;
   padding-left: 67px;
-  font-size: 8px;
+  font-size: 10px;
 `
 
 const Picture = styled.img`

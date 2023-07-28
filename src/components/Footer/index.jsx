@@ -11,7 +11,7 @@ const FooterContainer = styled.div`
 
 const FooterInformation = styled.div`
   font-family: 'Roboto Mono',monospace;
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 200;
   font-style: italic;
   text-align: center;
@@ -21,6 +21,7 @@ const PowerByReact = styled.div`
   position: absolute;
   bottom: 28px;
   right: 5em;
+  font-size: 19px;
 `
 const ReactLogoStyled = styled.img`
   height: 32px;
