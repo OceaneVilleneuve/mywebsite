@@ -13,7 +13,7 @@ const TitleContactPage = styled.h1`
   font-size: 15px;
   text-align: center;
   font-weight: bold;
-  margin-top: 4em;
+  margin-top: 5em;
 `
 const PersonnalInfo = styled.div`
   font-family: 'Roboto Mono',monospace;
