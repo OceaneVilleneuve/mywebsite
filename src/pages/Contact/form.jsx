@@ -27,7 +27,7 @@ function Form() {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    setFormStatus('Submitting...');
+    setFormStatus('ENVOI EN COURS...');
     const { name, email, message } = e.target.elements;
 
     // Send the form data to EmailJS
@@ -45,11 +45,11 @@ function Form() {
       .then(
         (response) => {
           console.log('Email envoyé avec succès:', response);
-          setFormStatus('Message Envoyé!');
+          setFormStatus('MESSAGE ENVOYÉ!');
         },
         (error) => {
-          console.error("Echec de l'envoi de l'email:", error);
-          setFormStatus("Echec de l'envoi");
+          console.error("ECHEC DE L'ENVOI DE L'EMAIL:", error);
+          setFormStatus("ECHEC DE L'ENVOI");
         }
       );
   };

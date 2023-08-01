@@ -31,6 +31,17 @@ const IconWrapper = styled.div`
 const Flex = styled.p`
   display: flex;
 `
+const PaddingInfos = styled.div`
+  padding-top: 4px;
+`
+
+const LinkToSocials = styled.a`
+  text-decoration: none;
+  color: black;
+`
+const PaddingName = styled.div`
+padding-top: 4px;
+`
 
 const Contact = () => (
   <PageContact>
@@ -40,20 +51,30 @@ const Contact = () => (
         <IconWrapper>
           <FaPhoneVolume icon="fa-solid fa-phone-volume" />
         </IconWrapper>
-        +33 788026223
+        <PaddingInfos>
+          +33 788026223
+        </PaddingInfos>
       </Flex>
-      <Flex>
-        <IconWrapper>
-          <FaLinkedinIn icon="fa-brands fa-linkedin-in" />
-        </IconWrapper>
-        LinkedIn
-      </Flex>
-      <Flex>
-        <IconWrapper>
-          <FaGithub icon="fa-brands fa-github" />
-        </IconWrapper>
-        GitHub
-      </Flex>
+      <LinkToSocials href="https://www.linkedin.com/in/océane-villeneuve-746449277/" target="_blank">
+        <Flex>
+          <IconWrapper>
+            <FaLinkedinIn icon="fa-brands fa-linkedin-in" />
+          </IconWrapper>
+          <PaddingName>
+            LinkedIn
+          </PaddingName>
+        </Flex>
+      </LinkToSocials>
+      <LinkToSocials href="https://github.com/OceaneVilleneuve" target="_blank">
+        <Flex>
+          <IconWrapper>
+            <FaGithub icon="fa-brands fa-github" />
+          </IconWrapper>
+          <PaddingName>
+            GitHub
+          </PaddingName>
+        </Flex>
+      </LinkToSocials>
     </PersonnalInfo>
     <TitleContactPage>FORMULAIRE DE CONTACT</TitleContactPage>
     <Form/>
