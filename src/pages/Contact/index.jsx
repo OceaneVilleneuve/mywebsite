@@ -19,7 +19,7 @@ const PersonnalInfo = styled.div`
   font-family: 'Roboto Mono',monospace;
   font-size: 12px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-top: 3em;
 `
 const IconWrapper = styled.div`
