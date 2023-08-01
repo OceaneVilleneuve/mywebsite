@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import LevelEnglish from '../../assets/level_english.png'
 import LevelFrench from '../../assets/level_french.png';
 
-
 const Bio = styled.p`
   font-family: 'Space Mono',monospace;
   font-size: 13px;

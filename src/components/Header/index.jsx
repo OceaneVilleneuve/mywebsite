@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import bannerCurri from '../../assets/banner_curri.jpg'
+import BannerCurri from '../../assets/banner_curri.jpg'
 import ProfilPicture from '../../assets/profil_picture.jpg'
 import Portfolio from '../../assets/portfolio.jpg'
 import Contact from '../../assets/contact.jpg'
@@ -11,7 +11,7 @@ const Column = styled.div`
 `
 
 const HomeBanner = styled.div`
-  background-image: url(${(props) => props.$bannerCurri});
+  background-image: url(${(props) => props.$bannerUrl});
   background-size: cover;
   height: 9em;
   width: 100%;
@@ -68,11 +68,11 @@ const Header=() => {
     if (pathname==="/portfolio") {
       return Portfolio;
     }
-      return bannerCurri;
+      return BannerCurri;
   }
 
   return (
-  <HomeBanner $bannerCurri={getBackgroundPicture(location.pathname)}>
+  <HomeBanner $bannerUrl={getBackgroundPicture(location.pathname)}>
     <Column>
       <Logo>Océane Villeneuve</Logo>
       <TitleDescription>Développeuse web Full-stack junior</TitleDescription>

@@ -8,7 +8,8 @@ import Error from './components/Error'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
-import "./global.css";
+import "./global.css"
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
