@@ -16,6 +16,10 @@ const SendButton = styled.button`
   font-family: 'Space Mono',monospace;
   font-size: 12px;
 `
+const Flex = styled.div`
+  display: flex;
+  justify-content: center;
+`
 
 function Form() {
   const [formStatus, setFormStatus] = React.useState('ENVOYER');
@@ -64,7 +68,9 @@ function Form() {
           <Label>Message</Label>
           <textarea className="form-control" id="message" required />
         </div>
-        <SendButton type="submit">{formStatus}</SendButton>
+        <Flex>
+          <SendButton type="submit">{formStatus}</SendButton>
+        </Flex>
       </form>
     </div>
   );
