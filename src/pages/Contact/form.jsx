@@ -19,6 +19,7 @@ const SendButton = styled.button`
 const Flex = styled.div`
   display: flex;
   justify-content: center;
+  margin-top: 4em;
 `
 
 function Form() {
