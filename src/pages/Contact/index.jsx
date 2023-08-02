@@ -5,7 +5,7 @@ import colors from '../../utils/style/colors'
 import Form from './form'
 
 const PageContact = styled.div`
-  min-height: 100vh;
+  min-height: 85vh;
 `
 
 const TitleContactPage = styled.h1`
