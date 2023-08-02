@@ -30,7 +30,7 @@ const PersonnalInfo = styled.div`
   font-weight: bold;
 `
 const IconWrapper = styled.div`
-  color: ${colors.third};
+  color: ${colors.primary};
   padding-right: 10px;
   font-size: 15px;
 `
