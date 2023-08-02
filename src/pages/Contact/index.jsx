@@ -7,13 +7,19 @@ import Form from './form'
 const PageContact = styled.div`
   min-height: 80vh;
 `
+const TitleWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`
 
 const TitleContactPage = styled.h1`
   font-family: 'Space Mono',monospace;
   font-size: 15px;
   text-align: center;
-  font-weight: bold;
+  padding: 1em;
   margin-top: 5em;
+  width: 23em;
+  background-color: ${colors.button}
 `
 const PersonnalInfo = styled.div`
   font-family: 'Roboto Mono',monospace;
@@ -21,6 +27,7 @@ const PersonnalInfo = styled.div`
   display: flex;
   justify-content: space-evenly;
   margin-top: 3em;
+  font-weight: bold;
 `
 const IconWrapper = styled.div`
   color: ${colors.third};
@@ -40,12 +47,14 @@ const LinkToSocials = styled.a`
   color: black;
 `
 const PaddingName = styled.div`
-padding-top: 4px;
+  padding-top: 4px;
 `
 
 const Contact = () => (
   <PageContact>
-    <TitleContactPage>INFORMATIONS</TitleContactPage>
+    <TitleWrapper>
+      <TitleContactPage>INFORMATIONS</TitleContactPage>
+    </TitleWrapper>
     <PersonnalInfo>
       <Flex>
         <IconWrapper>
@@ -76,7 +85,9 @@ const Contact = () => (
         </Flex>
       </LinkToSocials>
     </PersonnalInfo>
-    <TitleContactPage>FORMULAIRE DE CONTACT</TitleContactPage>
+    <TitleWrapper>
+      <TitleContactPage>FORMULAIRE DE CONTACT</TitleContactPage>
+    </TitleWrapper>
     <Form/>
   </PageContact>
 )

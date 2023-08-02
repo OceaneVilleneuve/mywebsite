@@ -22,6 +22,20 @@ const Flex = styled.div`
   margin-top: 4em;
   margin-bottom: 4em;
 `
+const InputForm = styled.input`
+  width: 21em;
+  margin-bottom: 10px;
+`
+const MessageFrom = styled.textarea`
+  height: 10em;
+`
+
+const FlexInputs = styled.div`
+display: flex;
+align-content: center;
+flex-direction: column;
+flex-wrap: wrap;
+`
 
 function Form() {
   const [formStatus, setFormStatus] = React.useState('ENVOYER');
@@ -59,16 +73,22 @@ function Form() {
     <div className="container mt-5">
       <form onSubmit={onSubmit}>
         <div className="mb-3">
-          <Label>Nom</Label>
-          <input className="form-control" type="text" id="name" required />
+          <FlexInputs>
+            <Label>Nom et Prénom :</Label>
+            <InputForm className="form-control" type="text" id="name" required />
+          </FlexInputs>
         </div>
         <div className="mb-3">
-          <Label>Email</Label>
-          <input className="form-control" type="email" id="email" required />
+          <FlexInputs>
+            <Label>Email :</Label>
+            <InputForm className="form-control" type="email" id="email" required />
+          </FlexInputs>
         </div>
         <div className="mb-3">
-          <Label>Message</Label>
-          <textarea className="form-control" id="message" required />
+          <FlexInputs>
+            <Label>Message :</Label>
+            <MessageFrom className="form-control" id="message" required />
+          </FlexInputs>
         </div>
         <Flex>
           <SendButton type="submit">{formStatus}</SendButton>
