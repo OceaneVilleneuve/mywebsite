@@ -16,6 +16,7 @@ const SendButton = styled.button`
   padding: 16px 43px;
   font-family: 'Space Mono',monospace;
   font-size: 12px;
+  color: black;
 `
 const Flex = styled.div`
   display: flex;
@@ -35,10 +36,10 @@ const MessageFromMobile = styled.textarea`
   width: 21em;
 `
 const FlexInputs = styled.div`
-display: flex;
-align-content: center;
-flex-direction: column;
-flex-wrap: wrap;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 `
 
 function Form() {
