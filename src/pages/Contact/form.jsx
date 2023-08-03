@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import colors from '../../utils/style/colors';
 import emailjs from 'emailjs-com';
+import { useMediaQuery } from 'react-responsive';
 
 const Label = styled.label`
   font-family: 'Roboto Mono',monospace;
@@ -29,7 +30,10 @@ const InputForm = styled.input`
 const MessageFrom = styled.textarea`
   height: 10em;
 `
-
+const MessageFromMobile = styled.textarea`
+  height: 10em;
+  width: 21em;
+`
 const FlexInputs = styled.div`
 display: flex;
 align-content: center;
@@ -69,32 +73,64 @@ function Form() {
       );
   };
 
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
   return (
-    <div className="container mt-5">
-      <form onSubmit={onSubmit}>
-        <div className="mb-3">
-          <FlexInputs>
-            <Label>Nom et Prénom :</Label>
-            <InputForm className="form-control" type="text" id="name" required />
-          </FlexInputs>
-        </div>
-        <div className="mb-3">
-          <FlexInputs>
-            <Label>Email :</Label>
-            <InputForm className="form-control" type="email" id="email" required />
-          </FlexInputs>
-        </div>
-        <div className="mb-3">
-          <FlexInputs>
-            <Label>Message :</Label>
-            <MessageFrom className="form-control" id="message" required />
-          </FlexInputs>
-        </div>
-        <Flex>
-          <SendButton type="submit">{formStatus}</SendButton>
-        </Flex>
-      </form>
-    </div>
+    <>
+    {isMobile? (
+      <div className="container mt-5">
+        <form onSubmit={onSubmit}>
+          <div className="mb-3">
+            <FlexInputs>
+              <Label>Nom et Prénom :</Label>
+              <InputForm className="form-control" type="text" id="name" required />
+            </FlexInputs>
+          </div>
+          <div className="mb-3">
+            <FlexInputs>
+              <Label>Email :</Label>
+              <InputForm className="form-control" type="email" id="email" required />
+            </FlexInputs>
+          </div>
+          <div className="mb-3">
+            <FlexInputs>
+              <Label>Message :</Label>
+              <MessageFromMobile className="form-control" id="message" required />
+            </FlexInputs>
+          </div>
+          <Flex>
+            <SendButton type="submit">{formStatus}</SendButton>
+          </Flex>
+        </form>
+      </div>
+    ) : (
+      <div className="container mt-5">
+        <form onSubmit={onSubmit}>
+          <div className="mb-3">
+            <FlexInputs>
+              <Label>Nom et Prénom :</Label>
+              <InputForm className="form-control" type="text" id="name" required />
+            </FlexInputs>
+          </div>
+          <div className="mb-3">
+            <FlexInputs>
+              <Label>Email :</Label>
+              <InputForm className="form-control" type="email" id="email" required />
+            </FlexInputs>
+          </div>
+          <div className="mb-3">
+            <FlexInputs>
+              <Label>Message :</Label>
+              <MessageFrom className="form-control" id="message" required />
+            </FlexInputs>
+          </div>
+          <Flex>
+            <SendButton type="submit">{formStatus}</SendButton>
+          </Flex>
+        </form>
+      </div>
+      )}
+    </>
   );
 }
 

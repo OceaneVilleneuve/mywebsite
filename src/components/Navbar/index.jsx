@@ -23,7 +23,7 @@ const StyledLink = styled(Link)`
 `
 const StyledLinkMobile = styled(Link)`
 font-family: 'Roboto Mono',monospace;
-font-size: 10px;
+font-size: 9px;
 padding: 7px;
 border: 0.5px solid black;
 width: 100%;
