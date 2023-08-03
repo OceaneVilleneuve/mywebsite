@@ -4,6 +4,7 @@ import { FaGithub, FaPhoneVolume, FaLinkedinIn  } from "react-icons/fa6"
 import colors from '../../utils/style/colors'
 import Form from './form'
 
+
 const PageContact = styled.div`
   min-height: 80vh;
 `

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useMediaQuery } from 'react-responsive';
 import ReactLogo from '../../assets/react_logo.png';
 
 const FooterContainer = styled.div`
@@ -31,17 +32,46 @@ const ReactLogoStyled = styled.img`
   bottom: -3px;
   right: -40px;
 `
+const ReactLogoStyledMobile = styled.img`
+height: 32px;
+width: 36px;
+position: absolute;
+object-fit: cover;
+bottom: -1px;
+right: -75px;
+`
 
-const Footer = () => (
+const DesktopFooter = () => (
   <FooterContainer>
     <FooterInformation>
       2023 - Développé et designé par Océane VILLENEUVE
     </FooterInformation>
     <PowerByReact>
       Powered by
-      <ReactLogoStyled src={ReactLogo}/>
+      <ReactLogoStyled src={ReactLogo} />
     </PowerByReact>
   </FooterContainer>
-)
+);
+
+const MobileFooter = () => (
+  <FooterContainer>
+    <FooterInformation>
+      © 2023 - Océane VILLENEUVE
+    </FooterInformation>
+    <PowerByReact>
+      <ReactLogoStyledMobile src={ReactLogo} />
+    </PowerByReact>
+  </FooterContainer>
+);
+
+const Footer = () => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
+  return (
+    <>
+    {isMobile ? <MobileFooter /> : <DesktopFooter />}
+    </>
+  );
+};
 
 export default Footer;
