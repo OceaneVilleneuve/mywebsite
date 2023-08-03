@@ -19,8 +19,8 @@ const SendButton = styled.button`
 const Flex = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 4em;
-  margin-bottom: 4em;
+  margin-top: 2em;
+  margin-bottom: 3em;
 `
 const InputForm = styled.input`
   width: 21em;

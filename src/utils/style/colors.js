@@ -4,6 +4,7 @@ const colors = {
   third: '#B68DA7',
   fourth: '#393939',
   button: '#EDE0EF',
+  title: '#CDBACE',
 }
 
 export default colors

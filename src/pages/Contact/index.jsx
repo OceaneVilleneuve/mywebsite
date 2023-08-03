@@ -14,12 +14,12 @@ const TitleWrapper = styled.div`
 
 const TitleContactPage = styled.h1`
   font-family: 'Space Mono',monospace;
-  font-size: 15px;
+  font-size: 12px;
   text-align: center;
-  padding: 1em;
+  padding: 5px;
   margin-top: 5em;
   width: 23em;
-  background-color: ${colors.button}
+  background-color: ${colors.title}
 `
 const PersonnalInfo = styled.div`
   font-family: 'Roboto Mono',monospace;

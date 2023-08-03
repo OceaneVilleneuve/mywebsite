@@ -1,13 +1,14 @@
-import React from 'react'
-import styled from 'styled-components'
-import LevelEnglish from '../../assets/level_english.png'
+import React from 'react';
+import styled from 'styled-components';
+import LevelEnglish from '../../assets/level_english.png';
 import LevelFrench from '../../assets/level_french.png';
+import colors from '../../utils/style/colors';
 
 const Bio = styled.p`
   font-family: 'Space Mono',monospace;
   font-size: 13px;
   text-align: center;
-  margin: 61px 93px 51px;
+  margin: 61px 93px 17px;
 `
 const FlexContainer = styled.div`
   display: flex;
@@ -15,11 +16,11 @@ const FlexContainer = styled.div`
 `
 const ColumnContainer = styled.div`
   width: 50%;
-  padding: 0 45px;
+  padding: 27px 45px;
 `
 
 const TitleCurriculum = styled.div`
-  background-color: #CDBACE;
+  background-color: ${colors.title};
   font-family: 'Space Mono',monospace;
   font-size: 12px;
   padding: 5px;
