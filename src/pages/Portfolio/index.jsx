@@ -12,13 +12,13 @@ const PortfolioContainer = styled.div`
 const SubMenu = styled.nav`
   width: 20%;
   position: sticky;
-  top: 21px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  top: 45px;
+  border-top: 0.5px solid black;
+  border-bottom: 0.5px solid black;
   background-color: white;
   height: 100%;
   margin-left: 21px;
-  margin-top: 21px;
+  margin-top: 45px;
   font-size: 13px;
 `
 
