@@ -61,7 +61,7 @@ const dataAirdnd = [
   { image:require('../../assets/airdndresa.png'), },
   { image:require('../../assets/airdndteam.png'), },
   { image:require('../../assets/contratairdnd.png'), },
-  { image:require('../../assets/contratairdndaccepté.png'), },
+  { image:require('../../assets/contratairdndaccept.png'), },
 ];
 
 const Airdnd = () => {
