@@ -48,7 +48,7 @@ const Portfolio = () => {
   const projects = [
     { id: 'meetsicians', title: 'Meetsicians' },
     { id: 'airdnd', title: 'Air DnD' },
-    { id: 'mywebsite', title: 'My Website' },
+    { id: 'mywebsite', title: 'Mon Site' },
     // Add more projects
   ];
 

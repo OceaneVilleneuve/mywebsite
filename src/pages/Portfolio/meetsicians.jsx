@@ -1,4 +1,3 @@
-
 import styled from 'styled-components';
 import colors from '../../utils/style/colors';
 import React, {useState} from "react";
@@ -26,7 +25,7 @@ const Title = styled.h2`
 const Year = styled.h2`
   font-family: 'Space Mono',monospace;
   font-size: 17px;
-  color: ${colors.third}
+  color: ${colors.third};
 `
 const Website = styled.a`
   font-family: 'Roboto Mono',monospace;
@@ -34,7 +33,7 @@ const Website = styled.a`
   font-weight: lighter;
   font-size: 13px;
   font-style: italic;
-  color: ${colors.fourth}
+  color: ${colors.fourth};
 `
 
 const Description = styled.p`
@@ -43,11 +42,12 @@ const Description = styled.p`
   padding-top: 3em;
 `
 const PictureContainer = styled.div`
-  width: 30%;
+  width: 16em;
   display: flex;
-`
+  border: 0.5px solid black;
+  `
 
-const PictureMeetsicians = styled.img`
+  const PictureMeetsicians = styled.img`
   height: 27em;
   width: 16em;
 `
@@ -59,23 +59,21 @@ const SubTitle = styled.h2`
   font-weight: bold;
   padding-right: 10px;
 `
-const Figma = styled.p`
-  font-family: 'Roboto Mono',monospace;
-  text-decoration: none;
-  font-weight: lighter;
-  font-size: 13px;
-  font-style: italic;
-  color: ${colors.fourth}
+const SubYear = styled.h2`
+font-family: 'Space Mono',monospace;
+font-size: 14px;
+color: ${colors.third};
 `
 
 const PictureMeetsiciansDesktop = styled.img`
-  height: 28em;
+  height: 30em;
   width: 43em;
   object-fit: cover;
 `
 const PictureContainerDesktop = styled.div`
-  width: 50%;
+  width: 43em;
   display: flex;
+  border: 0.5px solid black;
 `
 const DesktopDiv = styled.div`
 margin-top: 5em;
@@ -120,15 +118,17 @@ const Meetsicians = () => {
         </Flex>
         <Website href="https://www.meetsicians.fr" target="_blank">www.meetsicians.fr</Website>
         <Description>
-          Pour notre projet final de formation au wagon de Nantes
+          Pour notre projet final de formation au Wagon à Nantes,
           nous avons décidé de créer une application mobile permettant
-          aux musiciens de trouver un groupe de musique proche de
-          leur localisation. Cette application se nomme Meetsicians.
+          aux musiciens de trouver un groupe de musique proche
+          de leur localisation. Cette application se nomme Meetsicians.
           <br/>
-          Pour cette application j’ai créer l’UX-UI sur le
-          logiciel figma. J’ai aussi développer plusieurs features
-          de l’application que ce soit en front ou en back sur Ruby on Rails.
-          L’application est toujours en cours de développement.
+          Nous avons été réparti en groupe e travail de quatres.
+          <br/>
+          Pour cette application, j'ai créé l'UX-UI sur le
+          logiciel Figma. J'ai également développé plusieurs fonctionnalités
+          de l'application, que ce soit en front-end ou en back-end avec Ruby on Rails.
+          L'application est toujours en cours de développement.
         </Description>
       </DescriptionContainer>
       <PictureContainer>
@@ -146,10 +146,10 @@ const Meetsicians = () => {
     <DesktopDiv>
         <DescriptionContainer className="mt-5">
           <Flex>
-          <SubTitle>Mon interprétation de Meetsicians en version desktop </SubTitle>
-          <Year>2023</Year>
+          <SubTitle>Mon interprétation en version desktop - FIGMA </SubTitle>
+          <SubYear>2023</SubYear>
           </Flex>
-          <Figma>Maquette réalisée sur figma par mes soins</Figma>
+          <Website href="https://www.figma.com/file/2j9esnIc8nTD6Ee6hyZnku/Meetsicians?type=design&node-id=708-3651&mode=design&t=AvUrV7xwkD7uOkPy-0" target="_blank">www.figma.com</Website>
           <div className="mt-5">
             <PictureContainerDesktop>
             <Carousel interval={null} activeIndex={index} onSelect={handleSelect} indicators={false}>
@@ -167,8 +167,7 @@ const Meetsicians = () => {
     </DesktopDiv>
   </MeetsiciansPage>
   )
-
-    }
+}
 
 
 export default Meetsicians;
