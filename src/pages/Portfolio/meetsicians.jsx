@@ -110,7 +110,7 @@ const Meetsicians = () => {
 
   return (
   <MeetsiciansPage>
-    <Flex className="justify-content-between">
+    <Flex className="justify-content-around">
       <DescriptionContainer>
         <Flex>
           <Title>Meetsicians </Title>
