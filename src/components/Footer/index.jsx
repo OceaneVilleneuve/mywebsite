@@ -25,11 +25,11 @@ const PowerByReact = styled.div`
   font-size: 19px;
 `
 const ReactLogoStyled = styled.img`
-  height: 32px;
-  width: 36px;
+  height: 27px;
+  width: 32px;
   position: absolute;
   object-fit: cover;
-  bottom: -3px;
+  bottom: 5px;
   right: -40px;
 `
 const ReactLogoStyledMobile = styled.img`
@@ -47,7 +47,7 @@ const DesktopFooter = () => (
       2023 - Développé et designé par Océane VILLENEUVE
     </FooterInformation>
     <PowerByReact>
-      Powered by
+      Powered by React
       <ReactLogoStyled src={ReactLogo} />
     </PowerByReact>
   </FooterContainer>
