@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import colors from '../../utils/style/colors';
 import React, {useState} from "react";
 import Carousel from 'react-bootstrap/Carousel';
+import { useMediaQuery } from 'react-responsive';
 
 const MeetsiciansPage = styled.div`
   min-height: 100vh;
@@ -79,6 +80,35 @@ const DesktopDiv = styled.div`
 margin-top: 5em;
 `
 
+const Mobileflex = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+`
+const FlexTitle = styled.div`
+  display: flex;
+  justify-content: center;
+`
+
+const DescriptionContainerMobile =styled.div`
+  width: 90%;
+  text-align: center;
+  margin-bottom: 3em;
+  margin-top: 2em;
+`
+const PictureMeetsiciansMobile = styled.img`
+  height: 20em;
+  width: 24em;
+  object-fit: cover;
+`
+const PictureContainerDesktopMobile = styled.div`
+  width: 24em;
+  display: flex;
+  border: 0.5px solid black;
+`
+
 const data = [
   { image: require('../../assets/meetsicians_home.png'), },
   { image:require('../../assets/meetsicians.png'), },
@@ -102,7 +132,7 @@ const dataDesktop = [
   { imageDesktop:require('../../assets/convdesktop.png'), },
 ];
 
-const Meetsicians = () => {
+const MeetsiciansDesktop = () => {
   const [index, setIndex] = useState(0);
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
@@ -116,7 +146,7 @@ const Meetsicians = () => {
           <Title>Meetsicians </Title>
           <Year>2023</Year>
         </Flex>
-        <Website href="https://www.meetsicians.fr" target="_blank">www.meetsicians.fr</Website>
+          <Website href="https://www.meetsicians.fr" target="_blank">www.meetsicians.fr</Website>
         <Description>
           Pour notre projet final de formation au Wagon à Nantes,
           nous avons décidé de créer une application mobile permettant
@@ -169,5 +199,78 @@ const Meetsicians = () => {
   )
 }
 
+const MeetsiciansMobile = () => {
+  const [index, setIndex] = useState(0);
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+
+  return (
+  <MeetsiciansPage>
+    <Mobileflex className="justify-content-around">
+      <DescriptionContainerMobile>
+        <FlexTitle>
+          <Title>Meetsicians </Title>
+          <Year>2023</Year>
+        </FlexTitle>
+        <Website href="https://www.meetsicians.fr" target="_blank">www.meetsicians.fr</Website>
+        <Description>
+          Pour notre projet final de formation au Wagon à Nantes,
+          nous avons décidé de créer une application mobile permettant
+          aux musiciens de trouver un groupe de musique proche
+          de leur localisation. Cette application se nomme Meetsicians.
+          <br/>
+          Nous avons été réparti en groupe e travail de quatres.
+          <br/>
+          Pour cette application, j'ai créé l'UX-UI sur le
+          logiciel Figma. J'ai également développé plusieurs fonctionnalités
+          de l'application, que ce soit en front-end ou en back-end avec Ruby on Rails.
+          L'application est toujours en cours de développement.
+        </Description>
+      </DescriptionContainerMobile>
+      <PictureContainer>
+      <Carousel interval={null} activeIndex={index} onSelect={handleSelect} indicators={false}>
+        {data.map((slide, i) => {
+          return (
+          <Carousel.Item>
+            <PictureMeetsicians className="d-block " src={slide.image} />
+          </Carousel.Item>
+        )
+        })}
+      </Carousel>
+      </PictureContainer>
+    </Mobileflex>
+    <DesktopDiv>
+        <DescriptionContainerMobile className="mt-5">
+          <SubTitle>Mon interprétation desktop </SubTitle>
+          <Website href="https://www.figma.com/file/2j9esnIc8nTD6Ee6hyZnku/Meetsicians?type=design&node-id=708-3651&mode=design&t=AvUrV7xwkD7uOkPy-0" target="_blank">www.figma.com</Website>
+          <div className="mt-5">
+            <PictureContainerDesktopMobile>
+            <Carousel interval={null} activeIndex={index} onSelect={handleSelect} indicators={false}>
+              {dataDesktop.map((slide, i) => {
+                return (
+                  <Carousel.Item>
+                  <PictureMeetsiciansMobile className="d-block " src={slide.imageDesktop} />
+                </Carousel.Item>
+              )
+            })}
+            </Carousel>
+            </PictureContainerDesktopMobile>
+          </div>
+        </DescriptionContainerMobile>
+    </DesktopDiv>
+  </MeetsiciansPage>
+  )
+}
+
+const Meetsicians = () => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
+  return (
+    <>
+    {isMobile ? <MeetsiciansMobile /> : <MeetsiciansDesktop />}
+    </>
+  );
+};
 
 export default Meetsicians;
