@@ -32,13 +32,30 @@ const ReactLogoStyled = styled.img`
   bottom: 5px;
   right: -40px;
 `
-const ReactLogoStyledMobile = styled.img`
-height: 32px;
-width: 36px;
-position: absolute;
-object-fit: cover;
-bottom: -1px;
-right: -75px;
+const FooterInformationMobile = styled.div`
+  font-family: 'Roboto Mono',monospace;
+  font-size: 11px;
+  font-weight: 200;
+  font-style: italic;
+  display: flex;
+  text-align: center;
+`
+
+const PowerByReactMobile = styled.div`
+  font-family: 'Pinyon Script',cursive;
+  bottom: 28px;
+  right: 5em;
+  font-size: 14px;
+  margin-left: 3em;
+
+`
+
+const FooterContainerMobile = styled.div`
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-top: 0.5px solid black;
+  display: flex;
+  justify-content: center;
 `
 
 const DesktopFooter = () => (
@@ -54,14 +71,14 @@ const DesktopFooter = () => (
 );
 
 const MobileFooter = () => (
-  <FooterContainer>
-    <FooterInformation>
+  <FooterContainerMobile>
+    <FooterInformationMobile>
       © 2023 - Océane VILLENEUVE
-    </FooterInformation>
-    <PowerByReact>
-      <ReactLogoStyledMobile src={ReactLogo} />
-    </PowerByReact>
-  </FooterContainer>
+    <PowerByReactMobile>
+      Powered by React
+    </PowerByReactMobile>
+    </FooterInformationMobile>
+  </FooterContainerMobile>
 );
 
 const Footer = () => {
