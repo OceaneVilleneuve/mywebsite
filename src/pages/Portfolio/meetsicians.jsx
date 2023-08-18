@@ -56,7 +56,7 @@ const PictureContainer = styled.div`
 const SubTitle = styled.h2`
   font-family: 'Space Mono',monospace;
   font-style: italic;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   padding-right: 10px;
 `
@@ -194,28 +194,30 @@ const MeetsiciansDesktop = () => {
       </Carousel>
       </PictureContainer>
     </Flex>
+    <Flex>
     <DesktopDiv>
-        <DescriptionContainer className="mt-5">
-          <Flex>
+      <DescriptionContainer className="mt-5">
+        <Flex>
           <SubTitle>Mon interprétation en version desktop - FIGMA </SubTitle>
           <SubYear>2023</SubYear>
-          </Flex>
-          <Website href="https://www.figma.com/file/2j9esnIc8nTD6Ee6hyZnku/Meetsicians?type=design&node-id=708-3651&mode=design&t=AvUrV7xwkD7uOkPy-0" target="_blank">www.figma.com</Website>
-          <div className="mt-5">
-            <PictureContainerDesktop>
-            <Carousel interval={null} activeIndex={index} onSelect={handleSelect} indicators={false}>
-              {dataDesktop.map((slide, i) => {
-                return (
-                  <Carousel.Item>
-                  <PictureMeetsiciansDesktop className="d-block " src={slide.imageDesktop} />
-                </Carousel.Item>
-              )
-            })}
-            </Carousel>
-            </PictureContainerDesktop>
-          </div>
-        </DescriptionContainer>
+        </Flex>
+        <Website href="https://www.figma.com/file/2j9esnIc8nTD6Ee6hyZnku/Meetsicians?type=design&node-id=708-3651&mode=design&t=AvUrV7xwkD7uOkPy-0" target="_blank">www.figma.com</Website>
+      </DescriptionContainer>
+        <div className="mt-5">
+          <PictureContainerDesktop>
+          <Carousel interval={null} activeIndex={index} onSelect={handleSelect} indicators={false}>
+            {dataDesktop.map((slide, i) => {
+              return (
+                <Carousel.Item>
+                <PictureMeetsiciansDesktop className="d-block " src={slide.imageDesktop} />
+              </Carousel.Item>
+            )
+          })}
+          </Carousel>
+          </PictureContainerDesktop>
+        </div>
     </DesktopDiv>
+    </Flex>
   </MeetsiciansPage>
   )
 }
