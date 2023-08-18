@@ -51,8 +51,8 @@ const SubMenuMobile = styled.nav`
   background-color: white;
   height: 63px;
   font-size: 13px;
-  margin-top: 2em;
   z-index: 1;
+  height: 7em;
 `
 
 const ProjectsMobile = styled.div`
@@ -63,6 +63,7 @@ const FlexUl = styled.ul`
   display: flex;
   justify-content: space-evenly;
   padding-left: 0rem;
+  padding-top: 2em;
 `
 
 
