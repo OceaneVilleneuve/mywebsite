@@ -161,7 +161,7 @@ const MeetsiciansDesktop = () => {
 
   return (
   <MeetsiciansPage>
-    <Flex className="justify-content-around">
+    <Flex >
       <DescriptionContainer>
         <Flex>
           <Title>Meetsicians </Title>
