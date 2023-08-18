@@ -61,9 +61,9 @@ const SubTitle = styled.h2`
   padding-right: 10px;
 `
 const SubYear = styled.h2`
-font-family: 'Space Mono',monospace;
-font-size: 14px;
-color: ${colors.third};
+  font-family: 'Space Mono',monospace;
+  font-size: 14px;
+  color: ${colors.third};
 `
 
 const PictureMeetsiciansDesktop = styled.img`
@@ -77,7 +77,7 @@ const PictureContainerDesktop = styled.div`
   border: 0.5px solid black;
 `
 const DesktopDiv = styled.div`
-margin-top: 5em;
+  margin-top: 5em;
 `
 
 const Mobileflex = styled.div`
@@ -98,15 +98,36 @@ const DescriptionContainerMobile =styled.div`
   margin-bottom: 3em;
   margin-top: 2em;
 `
-const PictureMeetsiciansMobile = styled.img`
-  height: 20em;
-  width: 24em;
+const PictureMeetsiciansMobileDesktop = styled.img`
+  height: 16em;
   object-fit: cover;
 `
 const PictureContainerDesktopMobile = styled.div`
-  width: 24em;
+  width: 100%;
   display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+`
+
+const PictureMeetsiciansMobile = styled.img`
+  height: 27em;
+  width: 16em;
+`
+const PictureContainerMobile = styled.div`
+  width: 16em;
+  display: flex;
+  margin-left: 3em;
   border: 0.5px solid black;
+`
+const MeetsiciansPageMobile = styled.div`
+  min-height: 100vh;
+  margin-top: 19px;
+`
+
+const DescriptionMobileSub = styled.div`
+  margin-top: 3rem;
+  text-align: center;
+  margin-bottom: 2em;
 `
 
 const data = [
@@ -206,7 +227,7 @@ const MeetsiciansMobile = () => {
   };
 
   return (
-  <MeetsiciansPage>
+  <MeetsiciansPageMobile>
     <Mobileflex className="justify-content-around">
       <DescriptionContainerMobile>
         <FlexTitle>
@@ -228,38 +249,39 @@ const MeetsiciansMobile = () => {
           L'application est toujours en cours de développement.
         </Description>
       </DescriptionContainerMobile>
-      <PictureContainer>
+      <PictureContainerMobile>
       <Carousel interval={null} activeIndex={index} onSelect={handleSelect} indicators={false}>
         {data.map((slide, i) => {
           return (
           <Carousel.Item>
-            <PictureMeetsicians className="d-block " src={slide.image} />
+            <PictureMeetsiciansMobile className="d-block " src={slide.image} />
           </Carousel.Item>
         )
         })}
       </Carousel>
-      </PictureContainer>
+      </PictureContainerMobile>
     </Mobileflex>
     <DesktopDiv>
-        <DescriptionContainerMobile className="mt-5">
+      <DescriptionMobileSub>
+        <FlexTitle>
           <SubTitle>Mon interprétation desktop </SubTitle>
-          <Website href="https://www.figma.com/file/2j9esnIc8nTD6Ee6hyZnku/Meetsicians?type=design&node-id=708-3651&mode=design&t=AvUrV7xwkD7uOkPy-0" target="_blank">www.figma.com</Website>
-          <div className="mt-5">
-            <PictureContainerDesktopMobile>
-            <Carousel interval={null} activeIndex={index} onSelect={handleSelect} indicators={false}>
-              {dataDesktop.map((slide, i) => {
-                return (
-                  <Carousel.Item>
-                  <PictureMeetsiciansMobile className="d-block " src={slide.imageDesktop} />
-                </Carousel.Item>
-              )
-            })}
-            </Carousel>
-            </PictureContainerDesktopMobile>
-          </div>
-        </DescriptionContainerMobile>
+          <Year>2023</Year>
+        </FlexTitle>
+        <Website href="https://www.figma.com/file/2j9esnIc8nTD6Ee6hyZnku/Meetsicians?type=design&node-id=708-3651&mode=design&t=AvUrV7xwkD7uOkPy-0" target="_blank">www.figma.com</Website>
+      </DescriptionMobileSub>
+      <PictureContainerDesktopMobile>
+        <Carousel interval={null} activeIndex={index} onSelect={handleSelect} indicators={false}>
+          {dataDesktop.map((slide, i) => {
+            return (
+              <Carousel.Item>
+                <PictureMeetsiciansMobileDesktop className="d-block " src={slide.imageDesktop} />
+              </Carousel.Item>
+            )
+          })}
+        </Carousel>
+      </PictureContainerDesktopMobile>
     </DesktopDiv>
-  </MeetsiciansPage>
+  </MeetsiciansPageMobile>
   )
 }
 

@@ -61,7 +61,8 @@ const ProjectsMobile = styled.div`
 
 const FlexUl = styled.ul`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding-left: 0rem;
 `
 
 
