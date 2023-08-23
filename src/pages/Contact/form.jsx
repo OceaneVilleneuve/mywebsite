@@ -72,6 +72,9 @@ function Form() {
         (response) => {
           console.log('Email envoyé avec succès:', response);
           setFormStatus('MESSAGE ENVOYÉ!');
+          setTimeout(() => {
+            setFormStatus('ENVOYER'); // Reset to the default value
+          }, 5000);
           // Réinitialiser les valeurs des champs de formulaire
           setName('');
           setEmail('');
