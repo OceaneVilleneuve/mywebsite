@@ -37,10 +37,11 @@ const Website = styled.a`
   color: ${colors.fourth};
 `
 
-const Description = styled.p`
+const DescriptionDesktop = styled.p`
   font-family: 'Roboto Mono',monospace;
   font-size: 12px;
   padding-top: 3em;
+  margin-right: 2em;
 `
 const PictureContainer = styled.div`
   width: 16em;
@@ -129,7 +130,12 @@ const DescriptionMobileSub = styled.div`
   text-align: center;
   margin-bottom: 2em;
 `
+const DescriptionMobile = styled.p`
+  font-family: 'Roboto Mono',monospace;
+  font-size: 12px;
+  padding-top: 3em;
 
+`
 const data = [
   { image: require('../../assets/meetsicians_home.png'), },
   { image:require('../../assets/meetsicians.png'), },
@@ -175,7 +181,7 @@ const MeetsiciansDesktop = () => {
           <Year>2023</Year>
         </Flex>
           <Website href="https://www.meetsicians.fr" target="_blank">www.meetsicians.fr</Website>
-        <Description>
+        <DescriptionDesktop>
           Pour notre projet final de formation au Wagon à Nantes,
           nous avons décidé de créer une application mobile permettant
           aux musiciens de trouver un groupe de musique proche
@@ -187,7 +193,7 @@ const MeetsiciansDesktop = () => {
           logiciel Figma. J'ai également développé plusieurs fonctionnalités
           de l'application, que ce soit en front-end ou en back-end avec Ruby on Rails.
           L'application est toujours en cours de développement.
-        </Description>
+        </DescriptionDesktop>
       </DescriptionContainer>
       <PictureContainer>
       <Carousel interval={null} activeIndex={indexCarousel1} onSelect={handleSelectCarousel1} indicators={false}>
@@ -250,7 +256,7 @@ const MeetsiciansMobile = () => {
           <Year>2023</Year>
         </FlexTitle>
         <Website href="https://www.meetsicians.fr" target="_blank">www.meetsicians.fr</Website>
-        <Description>
+        <DescriptionMobile>
           Pour notre projet final de formation au Wagon à Nantes,
           nous avons décidé de créer une application mobile permettant
           aux musiciens de trouver un groupe de musique proche
@@ -262,7 +268,7 @@ const MeetsiciansMobile = () => {
           logiciel Figma. J'ai également développé plusieurs fonctionnalités
           de l'application, que ce soit en front-end ou en back-end avec Ruby on Rails.
           L'application est toujours en cours de développement.
-        </Description>
+        </DescriptionMobile>
       </DescriptionContainerMobile>
       <PictureContainerMobile>
       <Carousel interval={null} activeIndex={indexCarousel1} onSelect={handleSelectCarousel1} indicators={false}>
