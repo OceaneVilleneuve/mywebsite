@@ -46,6 +46,9 @@ const FlexInputs = styled.div`
 function Form() {
   const [formStatus, setFormStatus] = React.useState('ENVOYER');
   const [isLoading, setIsLoading] = React.useState(false);
+  const [name, setName] = React.useState(''); // Utilisez des états locaux pour les valeurs des champs
+  const [email, setEmail] = React.useState('');
+  const [message, setMessage] = React.useState('');
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -69,6 +72,10 @@ function Form() {
         (response) => {
           console.log('Email envoyé avec succès:', response);
           setFormStatus('MESSAGE ENVOYÉ!');
+          // Réinitialiser les valeurs des champs de formulaire
+          setName('');
+          setEmail('');
+          setMessage('');
         },
         (error) => {
           console.error("ECHEC DE L'ENVOI DE L'EMAIL:", error);
@@ -95,19 +102,22 @@ function Form() {
           <div className="mb-3">
             <FlexInputs>
               <Label>Nom et Prénom :</Label>
-              <InputForm className="form-control" type="text" id="name" required disabled={isLoading}/>
+              <InputForm className="form-control" type="text" id="name" required alue={name}
+                  onChange={(e) => setName(e.target.value)} disabled={isLoading}/>
             </FlexInputs>
           </div>
           <div className="mb-3">
             <FlexInputs>
               <Label>Email :</Label>
-              <InputForm className="form-control" type="email" id="email" required disabled={isLoading}/>
+              <InputForm className="form-control" type="email" id="email" required value={email}
+                  onChange={(e) => setEmail(e.target.value)} disabled={isLoading}/>
             </FlexInputs>
           </div>
           <div className="mb-3">
             <FlexInputs>
               <Label>Message :</Label>
-              <MessageFromMobile className="form-control" id="message" required disabled={isLoading}/>
+              <MessageFromMobile className="form-control" id="message" required value={message}
+                  onChange={(e) => setMessage(e.target.value)} disabled={isLoading}/>
             </FlexInputs>
           </div>
           <Flex>
@@ -121,19 +131,22 @@ function Form() {
           <div className="mb-3">
             <FlexInputs>
               <Label>Nom et Prénom :</Label>
-              <InputForm className="form-control" type="text" id="name" required disabled={isLoading}/>
+              <InputForm className="form-control" type="text" id="name" required value={name}
+                  onChange={(e) => setName(e.target.value)} disabled={isLoading} />
             </FlexInputs>
           </div>
           <div className="mb-3">
             <FlexInputs>
               <Label>Email :</Label>
-              <InputForm className="form-control" type="email" id="email" required disabled={isLoading}/>
+              <InputForm className="form-control" type="email" id="email" required value={email}
+                  onChange={(e) => setEmail(e.target.value)} disabled={isLoading}/>
             </FlexInputs>
           </div>
           <div className="mb-3">
             <FlexInputs>
               <Label>Message :</Label>
-              <MessageFrom className="form-control" id="message" required disabled={isLoading}/>
+              <MessageFrom className="form-control" id="message" required  value={message}
+                  onChange={(e) => setMessage(e.target.value)} disabled={isLoading}/>
             </FlexInputs>
           </div>
           <Flex>
