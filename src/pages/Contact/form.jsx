@@ -102,7 +102,7 @@ function Form() {
           <div className="mb-3">
             <FlexInputs>
               <Label>Nom et Prénom :</Label>
-              <InputForm className="form-control" type="text" id="name" required alue={name}
+              <InputForm className="form-control" type="text" id="name" required value={name}
                   onChange={(e) => setName(e.target.value)} disabled={isLoading}/>
             </FlexInputs>
           </div>

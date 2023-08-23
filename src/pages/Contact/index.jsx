@@ -85,6 +85,7 @@ const Contact = () => (
           </PaddingName>
         </Flex>
       </LinkToSocials>
+      <LinkToSocials href="mailto:oceanevilleneuve16@gmail.com" target="_blank">
       <Flex>
         <IconWrapper>
         <FaEnvelopeOpenText icon="fa-solid fa-envelope-open-text" />
@@ -93,6 +94,7 @@ const Contact = () => (
           oceanevilleneuve16@gmail.com
         </PaddingInfos>
       </Flex>
+      </LinkToSocials>
     </PersonnalInfo>
     <TitleWrapper>
       <TitleContactPage>FORMULAIRE DE CONTACT</TitleContactPage>

@@ -74,6 +74,8 @@ const City = styled.div`
   font-size: 9px;
   margin-left: 7px;
   margin-top: 5px;
+  color: white;
+  text-shadow: 1px 1px 2px #393939;
 `
 const CityMobile = styled.div`
   font-family: 'Roboto Mono',monospace;
@@ -85,6 +87,7 @@ const CityMobile = styled.div`
 const Location = styled.div `
   margin-left: 1em;
   font-size: 12px;
+  color: white;
 `
 
 const Header = () => {
