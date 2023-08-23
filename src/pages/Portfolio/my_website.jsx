@@ -34,12 +34,18 @@ const DescriptionMywebsite = styled.p`
   font-size: 12px;
   padding-top: 1em;
   margin-bottom: 5em;
+  margin-right: 5em;
 `
 
 const PictureMyWebsite = styled.img`
   height: 29em;
   width: 34em;
 `
+const PictureContainer = styled.div`
+  width: 241px;
+  display: flex;
+  border: 0.5px solid black;
+  `
 
 const PictureMyWebsiteDesktop = styled.div`
   width: 545px;
@@ -84,6 +90,10 @@ const PictureMyWebsiteMobile = styled.img`
   width: 22em;
   object-fit: cover;
 `
+const PictureMyWebsiteMobileDesktopVersion = styled.img`
+  height: 31em;
+  width: 15em;
+`
 
 const PictureMyWebsiteDesktopMobileVersion = styled.div`
   display: flex;
@@ -101,7 +111,18 @@ const DescriptionMyWebsiteMobile = styled.p`
   font-size: 12px;
   padding-top: 2em;
 `
-
+const SubTitle = styled.h2`
+  font-family: 'Space Mono',monospace;
+  font-style: italic;
+  font-size: 13px;
+  font-weight: bold;
+  padding-right: 10px;
+`
+const SubYear = styled.h2`
+  font-family: 'Space Mono',monospace;
+  font-size: 14px;
+  color: ${colors.third};
+`
 const FlexLinkWebsite = styled.p`
   display: flex;
   flex-direction: column;
@@ -116,6 +137,11 @@ const MyWebsiteLinkMobile = styled.a`
   font-style: italic;
   color: ${colors.fourth};
 `
+const dataMyWebsiteMobile = [
+  { imageWebsiteMobile: require('../../assets/mywebsitemobile.png'), },
+  { imageWebsiteMobile:require('../../assets/mywebsitemobile2.png'), },
+  { imageWebsiteMobile:require('../../assets/mywebsitemobile3.png'), },
+];
 
 const dataMyWebsite = [
   { imageWebsite: require('../../assets/mywebsite.png'), },
@@ -126,13 +152,21 @@ const dataMyWebsite = [
 ];
 
 const MyWebsiteDesktop = () => {
-  const [index, setIndex] = useState(0);
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
+  const [indexCarousel1, setIndexCarousel1] = useState(0); // État d'index pour le premier carrousel
+  const [indexCarousel2, setIndexCarousel2] = useState(0);
+
+  const handleSelectCarousel1 = (selectedIndex, e) => {
+    setIndexCarousel1(selectedIndex);
   };
+
+  const handleSelectCarousel2 = (selectedIndex, e) => {
+    setIndexCarousel2(selectedIndex);
+  };
+
 
   return (
     <MyWebsitePage>
+      <Flex>
       <DescriptionContainer>
         <Flex>
           <Title>Mon application</Title>
@@ -152,8 +186,29 @@ const MyWebsiteDesktop = () => {
         Et aussi de permettre à toute personne intéressée par mon profil de me contacter facilement.
         </DescriptionMywebsite>
     </DescriptionContainer>
+    <PictureContainer>
+      <Carousel interval={null} activeIndex={indexCarousel1} onSelect={handleSelectCarousel1} indicators={false}>
+        {dataMyWebsiteMobile.map((slide, i) => {
+          return (
+          <Carousel.Item>
+            <PictureMyWebsiteMobileDesktopVersion className="d-block " src={slide.imageWebsiteMobile} />
+          </Carousel.Item>
+        )
+        })}
+      </Carousel>
+      </PictureContainer>
+    </Flex>
+    <>
+    <DescriptionContainer className="mt-5">
+        <Flex>
+          <SubTitle>Mon interprétation en version desktop - FIGMA </SubTitle>
+          <SubYear>2023</SubYear>
+        </Flex>
+        <MyWebsiteLink href="https://www.figma.com/file/2j9esnIc8nTD6Ee6hyZnku/Meetsicians?type=design&node-id=708-3651&mode=design&t=AvUrV7xwkD7uOkPy-0" target="_blank">www.figma.com</MyWebsiteLink>
+      </DescriptionContainer>
+      <div className="mt-5">
       <PictureMyWebsiteDesktop>
-      <Carousel interval={null} activeIndex={index} onSelect={handleSelect} indicators={false} variant={'dark'}>
+      <Carousel interval={null} activeIndex={indexCarousel2} onSelect={handleSelectCarousel2} indicators={false} variant={'dark'}>
         {dataMyWebsite.map((slide, i) => {
           return (
           <Carousel.Item>
@@ -163,18 +218,30 @@ const MyWebsiteDesktop = () => {
         })}
       </Carousel>
       </PictureMyWebsiteDesktop>
+      </div>
+    </>
     </MyWebsitePage>
   )
 }
 
 const MyWebsiteMobile = () => {
-  const [index, setIndex] = useState(0);
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
+  const [indexCarousel1, setIndexCarousel1] = useState(0); // État d'index pour le premier carrousel
+  const [indexCarousel2, setIndexCarousel2] = useState(0);
+
+  const handleSelectCarousel1 = (selectedIndex, e) => {
+    setIndexCarousel1(selectedIndex);
   };
+
+  const handleSelectCarousel2 = (selectedIndex, e) => {
+    setIndexCarousel2(selectedIndex);
+  };
+
 
   return (
     <MyWebsitePageMobile>
+      <Flex>
+
+      </Flex>
       <MobileFlex>
         <DescriptionContainerMobile>
           <FlexTitleMobile>
@@ -196,8 +263,21 @@ const MyWebsiteMobile = () => {
           Mon objectif est de fournir une plateforme permettant de présenter mes compétences et expériences professionnelles de manière convaincante.
           </DescriptionMyWebsiteMobile>
       </DescriptionContainerMobile>
+      <PictureContainer>
+      <Carousel interval={null} activeIndex={indexCarousel1} onSelect={handleSelectCarousel1} indicators={false}>
+        {dataMyWebsiteMobile.map((slide, i) => {
+          return (
+          <Carousel.Item>
+            <PictureMyWebsiteMobileDesktopVersion className="d-block " src={slide.image} />
+          </Carousel.Item>
+        )
+        })}
+      </Carousel>
+      </PictureContainer>
+          </MobileFlex>
+        <Flex>
         <PictureMyWebsiteDesktopMobileVersion>
-        <Carousel interval={null} activeIndex={index} onSelect={handleSelect} indicators={false} variant={'dark'}>
+        <Carousel interval={null} activeIndex={indexCarousel2} onSelect={handleSelectCarousel2} indicators={false} variant={'dark'}>
           {dataMyWebsite.map((slide, i) => {
             return (
             <Carousel.Item>
@@ -207,7 +287,7 @@ const MyWebsiteMobile = () => {
           })}
         </Carousel>
         </PictureMyWebsiteDesktopMobileVersion>
-      </MobileFlex>
+      </Flex>
     </MyWebsitePageMobile>
   )
 }

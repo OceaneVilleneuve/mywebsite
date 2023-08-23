@@ -187,7 +187,7 @@ const MeetsiciansDesktop = () => {
           aux musiciens de trouver un groupe de musique proche
           de leur localisation. Cette application se nomme Meetsicians.
           <br/>
-          Nous avons été réparti en groupe e travail de quatres.
+          Nous avons été réparti en groupe travail de quatre.
           <br/>
           Pour cette application, j'ai réalisé la conception UX-UI sur le logiciel Figma,
           en m'inspirant du wireframe élaboré en groupe. J'ai également développé plusieurs

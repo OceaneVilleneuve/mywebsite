@@ -100,7 +100,7 @@ const DesktopCurriculum = () => {
             <p>
               <b>Baccalrauréat litteraire option anglais renforcée,</b> <span style={{color: "#536289", fontStyle: "italic"}}>Lycée Léonard de Vinci, 2014 </span>
               <br/>
-              <span style={{color: "#393939"}}>Monatigu, France</span>
+              <span style={{color: "#393939"}}>Montaigu, France</span>
             </p>
           </TextCurriculum>
           <TitleCurriculum>PROJETS</TitleCurriculum>
@@ -123,7 +123,7 @@ const DesktopCurriculum = () => {
               </p>
               <ul>
                   <PuceText>Création et développement d'un clone de
-                    l'application air BnB.
+                    l'application Airbnb.
                   </PuceText>
               </ul>
           </TextCurriculum>
