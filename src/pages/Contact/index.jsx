@@ -27,6 +27,7 @@ const PersonnalInfo = styled.div`
   font-size: 12px;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   margin-top: 3em;
   font-weight: bold;
 `
