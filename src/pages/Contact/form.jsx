@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import colors from '../../utils/style/colors';
 import emailjs from 'emailjs-com';
 import { useMediaQuery } from 'react-responsive';
+import LoadingSpinner from './LoadingSpinner';
 
 const Label = styled.label`
   font-family: 'Roboto Mono',monospace;
@@ -44,9 +45,11 @@ const FlexInputs = styled.div`
 
 function Form() {
   const [formStatus, setFormStatus] = React.useState('ENVOYER');
+  const [isLoading, setIsLoading] = React.useState(false);
 
   const onSubmit = (e) => {
     e.preventDefault();
+    setIsLoading(true);
     setFormStatus('ENVOI EN COURS...');
     const { name, email, message } = e.target.elements;
 
@@ -71,32 +74,40 @@ function Form() {
           console.error("ECHEC DE L'ENVOI DE L'EMAIL:", error);
           setFormStatus("ECHEC DE L'ENVOI");
         }
-      );
+      )
+      .finally(() => {
+        setIsLoading(false); // Désactivation du chargement une fois terminé
+      });
   };
 
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   return (
     <>
+    {isLoading ? (
+      <div className="modal-overlay">
+        <LoadingSpinner />
+      </div>
+    ) : null}
     {isMobile? (
       <div className="container mt-5">
         <form onSubmit={onSubmit}>
           <div className="mb-3">
             <FlexInputs>
               <Label>Nom et Prénom :</Label>
-              <InputForm className="form-control" type="text" id="name" required />
+              <InputForm className="form-control" type="text" id="name" required disabled={isLoading}/>
             </FlexInputs>
           </div>
           <div className="mb-3">
             <FlexInputs>
               <Label>Email :</Label>
-              <InputForm className="form-control" type="email" id="email" required />
+              <InputForm className="form-control" type="email" id="email" required disabled={isLoading}/>
             </FlexInputs>
           </div>
           <div className="mb-3">
             <FlexInputs>
               <Label>Message :</Label>
-              <MessageFromMobile className="form-control" id="message" required />
+              <MessageFromMobile className="form-control" id="message" required disabled={isLoading}/>
             </FlexInputs>
           </div>
           <Flex>
@@ -110,19 +121,19 @@ function Form() {
           <div className="mb-3">
             <FlexInputs>
               <Label>Nom et Prénom :</Label>
-              <InputForm className="form-control" type="text" id="name" required />
+              <InputForm className="form-control" type="text" id="name" required disabled={isLoading}/>
             </FlexInputs>
           </div>
           <div className="mb-3">
             <FlexInputs>
               <Label>Email :</Label>
-              <InputForm className="form-control" type="email" id="email" required />
+              <InputForm className="form-control" type="email" id="email" required disabled={isLoading}/>
             </FlexInputs>
           </div>
           <div className="mb-3">
             <FlexInputs>
               <Label>Message :</Label>
-              <MessageFrom className="form-control" id="message" required />
+              <MessageFrom className="form-control" id="message" required disabled={isLoading}/>
             </FlexInputs>
           </div>
           <Flex>
