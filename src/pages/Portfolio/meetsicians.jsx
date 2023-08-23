@@ -290,6 +290,8 @@ const MeetsiciansMobile = () => {
         </FlexTitle>
         <Website href="https://www.figma.com/file/2j9esnIc8nTD6Ee6hyZnku/Meetsicians?type=design&node-id=708-3651&mode=design&t=AvUrV7xwkD7uOkPy-0" target="_blank">www.figma.com</Website>
       </DescriptionMobileSub>
+      <Flex>
+
       <PictureContainerDesktopMobile>
         <Carousel interval={null} activeIndex={indexCarousel2} onSelect={handleSelectCarousel2} indicators={false}>
           {dataDesktop.map((slide, i) => {
@@ -301,6 +303,7 @@ const MeetsiciansMobile = () => {
           })}
         </Carousel>
       </PictureContainerDesktopMobile>
+      </Flex>
     </DesktopDiv>
   </MeetsiciansPageMobile>
   )

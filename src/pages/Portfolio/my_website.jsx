@@ -96,9 +96,12 @@ const PictureMyWebsiteMobileDesktopVersion = styled.img`
 `
 
 const PictureMyWebsiteDesktopMobileVersion = styled.div`
+  width: 100%;
   display: flex;
-  border: 0.5px solid black;
+  justify-content: center;
+  margin-bottom: 2em;
 `
+
 
 const FlexTitleMobile = styled.div`
   display: flex;
@@ -136,6 +139,21 @@ const MyWebsiteLinkMobile = styled.a`
   font-size: 13px;
   font-style: italic;
   color: ${colors.fourth};
+`
+const PictureContainerMobile = styled.div`
+  width: 241px;
+  display: flex;
+  margin-left: 3em;
+  border: 0.5px solid black;
+`
+const DescriptionMobileSub = styled.div`
+  margin-top: 3rem;
+  text-align: center;
+  margin-bottom: 2em;
+`
+const FlexTitle = styled.div`
+  display: flex;
+  justify-content: center;
 `
 const dataMyWebsiteMobile = [
   { imageWebsiteMobile: require('../../assets/mywebsitemobile.png'), },
@@ -263,31 +281,38 @@ const MyWebsiteMobile = () => {
           Mon objectif est de fournir une plateforme permettant de présenter mes compétences et expériences professionnelles de manière convaincante.
           </DescriptionMyWebsiteMobile>
       </DescriptionContainerMobile>
-      <PictureContainer>
+      <PictureContainerMobile>
       <Carousel interval={null} activeIndex={indexCarousel1} onSelect={handleSelectCarousel1} indicators={false}>
         {dataMyWebsiteMobile.map((slide, i) => {
           return (
           <Carousel.Item>
-            <PictureMyWebsiteMobileDesktopVersion className="d-block " src={slide.image} />
+            <PictureMyWebsiteMobileDesktopVersion className="d-block " src={slide.imageWebsiteMobile} />
           </Carousel.Item>
         )
         })}
       </Carousel>
-      </PictureContainer>
-          </MobileFlex>
-        <Flex>
-        <PictureMyWebsiteDesktopMobileVersion>
-        <Carousel interval={null} activeIndex={indexCarousel2} onSelect={handleSelectCarousel2} indicators={false} variant={'dark'}>
+      </PictureContainerMobile>
+      </MobileFlex>
+      <div>
+      <DescriptionMobileSub>
+        <FlexTitle>
+          <SubTitle>Mon interprétation desktop </SubTitle>
+          <Year>2023</Year>
+        </FlexTitle>
+        <MyWebsiteLink href="https://www.figma.com/file/2j9esnIc8nTD6Ee6hyZnku/Meetsicians?type=design&node-id=708-3651&mode=design&t=AvUrV7xwkD7uOkPy-0" target="_blank">www.figma.com</MyWebsiteLink>
+      </DescriptionMobileSub>
+      <PictureMyWebsiteDesktopMobileVersion>
+        <Carousel interval={null} activeIndex={indexCarousel2} onSelect={handleSelectCarousel2} indicators={false}>
           {dataMyWebsite.map((slide, i) => {
             return (
-            <Carousel.Item>
-              <PictureMyWebsiteMobile className="d-block " src={slide.imageWebsite} />
-            </Carousel.Item>
-          )
+              <Carousel.Item>
+                <PictureMyWebsiteMobile className="d-block " src={slide.imageWebsite} />
+              </Carousel.Item>
+            )
           })}
         </Carousel>
-        </PictureMyWebsiteDesktopMobileVersion>
-      </Flex>
+      </PictureMyWebsiteDesktopMobileVersion>
+    </div>
     </MyWebsitePageMobile>
   )
 }
