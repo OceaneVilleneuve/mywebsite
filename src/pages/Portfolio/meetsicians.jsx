@@ -189,9 +189,9 @@ const MeetsiciansDesktop = () => {
           <br/>
           Nous avons été réparti en groupe e travail de quatres.
           <br/>
-          Pour cette application, j'ai créé l'UX-UI sur le
-          logiciel Figma. J'ai également développé plusieurs fonctionnalités
-          de l'application, que ce soit en front-end ou en back-end avec Ruby on Rails.
+          Pour cette application, j'ai réalisé la conception UX-UI sur le logiciel Figma,
+          en m'inspirant du wireframe élaboré en groupe. J'ai également développé plusieurs
+          fonctionnalités de l'application, que ce soit en front-end ou en back-end avec Ruby on Rails.
           L'application est toujours en cours de développement.
         </DescriptionDesktop>
       </DescriptionContainer>
