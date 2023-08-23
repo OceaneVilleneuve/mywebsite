@@ -154,10 +154,17 @@ const dataDesktop = [
 ];
 
 const MeetsiciansDesktop = () => {
-  const [index, setIndex] = useState(0);
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
+  const [indexCarousel1, setIndexCarousel1] = useState(0); // État d'index pour le premier carrousel
+  const [indexCarousel2, setIndexCarousel2] = useState(0);
+
+  const handleSelectCarousel1 = (selectedIndex, e) => {
+    setIndexCarousel1(selectedIndex);
   };
+
+  const handleSelectCarousel2 = (selectedIndex, e) => {
+    setIndexCarousel2(selectedIndex);
+  };
+
 
   return (
   <MeetsiciansPage>
@@ -183,7 +190,7 @@ const MeetsiciansDesktop = () => {
         </Description>
       </DescriptionContainer>
       <PictureContainer>
-      <Carousel interval={null} activeIndex={index} onSelect={handleSelect} indicators={false}>
+      <Carousel interval={null} activeIndex={indexCarousel1} onSelect={handleSelectCarousel1} indicators={false}>
         {data.map((slide, i) => {
           return (
           <Carousel.Item>
@@ -205,7 +212,7 @@ const MeetsiciansDesktop = () => {
       </DescriptionContainer>
         <div className="mt-5">
           <PictureContainerDesktop>
-          <Carousel interval={null} activeIndex={index} onSelect={handleSelect} indicators={false}>
+          <Carousel interval={null} activeIndex={indexCarousel2} onSelect={handleSelectCarousel2} indicators={false}>
             {dataDesktop.map((slide, i) => {
               return (
                 <Carousel.Item>
@@ -223,9 +230,15 @@ const MeetsiciansDesktop = () => {
 }
 
 const MeetsiciansMobile = () => {
-  const [index, setIndex] = useState(0);
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
+  const [indexCarousel1, setIndexCarousel1] = useState(0); // État d'index pour le premier carrousel
+  const [indexCarousel2, setIndexCarousel2] = useState(0);
+
+  const handleSelectCarousel1 = (selectedIndex, e) => {
+    setIndexCarousel1(selectedIndex);
+  };
+
+  const handleSelectCarousel2 = (selectedIndex, e) => {
+    setIndexCarousel2(selectedIndex);
   };
 
   return (
@@ -252,7 +265,7 @@ const MeetsiciansMobile = () => {
         </Description>
       </DescriptionContainerMobile>
       <PictureContainerMobile>
-      <Carousel interval={null} activeIndex={index} onSelect={handleSelect} indicators={false}>
+      <Carousel interval={null} activeIndex={indexCarousel1} onSelect={handleSelectCarousel1} indicators={false}>
         {data.map((slide, i) => {
           return (
           <Carousel.Item>
@@ -272,7 +285,7 @@ const MeetsiciansMobile = () => {
         <Website href="https://www.figma.com/file/2j9esnIc8nTD6Ee6hyZnku/Meetsicians?type=design&node-id=708-3651&mode=design&t=AvUrV7xwkD7uOkPy-0" target="_blank">www.figma.com</Website>
       </DescriptionMobileSub>
       <PictureContainerDesktopMobile>
-        <Carousel interval={null} activeIndex={index} onSelect={handleSelect} indicators={false}>
+        <Carousel interval={null} activeIndex={indexCarousel2} onSelect={handleSelectCarousel2} indicators={false}>
           {dataDesktop.map((slide, i) => {
             return (
               <Carousel.Item>
