@@ -41,7 +41,7 @@ const DescriptionDesktop = styled.p`
   font-family: 'Roboto Mono',monospace;
   font-size: 12px;
   padding-top: 3em;
-  margin-right: 2em;
+  margin-right: 5em;
 `
 const PictureContainer = styled.div`
   width: 16em;
