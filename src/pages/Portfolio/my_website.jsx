@@ -148,7 +148,8 @@ const MyWebsiteDesktop = () => {
         En ce qui concerne l'UX-UI, j'ai conçu une maquette sur Figma en version desktop, que j'ai adaptée pour mobile en
         utilisant le principe du responsive design, garantissant ainsi une expérience utilisateur optimale.
         <br/>
-        Mon objectif est de fournir une plateforme permettant de présenter mes compétences et expériences professionnelles de manière convaincante.
+        Mon objectif est de fournir une plateforme permettant de présenter mes compétences et expériences professionnelles.
+        Et aussi de permettre à toute personne intéressée par mon profil de me contacter facilement.
         </DescriptionMywebsite>
     </DescriptionContainer>
       <PictureMyWebsiteDesktop>
