@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FaGithub, FaPhoneVolume, FaLinkedinIn  } from "react-icons/fa6"
+import { FaGithub, FaPhoneVolume, FaLinkedinIn, FaEnvelopeOpenText  } from "react-icons/fa6"
 import colors from '../../utils/style/colors'
 import Form from './form'
 
@@ -85,6 +85,14 @@ const Contact = () => (
           </PaddingName>
         </Flex>
       </LinkToSocials>
+      <Flex>
+        <IconWrapper>
+        <FaEnvelopeOpenText icon="fa-solid fa-envelope-open-text" />
+        </IconWrapper>
+        <PaddingInfos>
+          oceanevilleneuve16@gmail.com
+        </PaddingInfos>
+      </Flex>
     </PersonnalInfo>
     <TitleWrapper>
       <TitleContactPage>FORMULAIRE DE CONTACT</TitleContactPage>
