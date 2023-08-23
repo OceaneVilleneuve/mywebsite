@@ -84,6 +84,11 @@ const CityMobile = styled.div`
   margin-top: 6px;
 `
 
+const LocationMobile = styled.div `
+  margin-left: 1em;
+  font-size: 12px;
+`
+
 const Location = styled.div `
   margin-left: 1em;
   font-size: 12px;
@@ -112,9 +117,9 @@ const Header = () => {
           <LogoMobile>Océane Villeneuve</LogoMobile>
           <TitleDescriptionMobile>Développeuse web Full-stack junior</TitleDescriptionMobile>
           <FlexFaAndCityMobile>
-            <Location>
+            <LocationMobile>
               <FaLocationDot icon="fas fa-map-marker-alt" />
-            </Location>
+            </LocationMobile>
             <CityMobile>NANTES</CityMobile>
           </FlexFaAndCityMobile>
         </Column>
