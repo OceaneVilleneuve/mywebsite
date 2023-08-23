@@ -68,7 +68,7 @@ const FlexUl = styled.ul`
 
 
 const PortfolioDesktop = () => {
-  const [activeProject, setActiveProject] = useState(null);
+  const [activeProject, setActiveProject] = useState('meetsicians');
 
   const projects = [
     { id: 'meetsicians', title: 'Meetsicians' },
@@ -79,6 +79,7 @@ const PortfolioDesktop = () => {
 
   const handleProjectClick = (projectId) => {
     setActiveProject(projectId);
+
   };
 
   return (
@@ -108,7 +109,7 @@ const PortfolioDesktop = () => {
 };
 
 const PortfolioMobile = () => {
-  const [activeProject, setActiveProject] = useState(null);
+  const [activeProject, setActiveProject] = useState('meetsicians');
 
   const projects = [
     { id: 'meetsicians', title: 'Meetsicians' },
