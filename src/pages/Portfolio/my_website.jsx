@@ -219,7 +219,7 @@ const MyWebsiteDesktop = () => {
     <>
     <DescriptionContainer className="mt-5">
         <Flex>
-          <SubTitle>Mon interprétation en version desktop - FIGMA </SubTitle>
+          <SubTitle>Mon site en version desktop - FIGMA </SubTitle>
           <SubYear>2023</SubYear>
         </Flex>
         <MyWebsiteLink href="https://www.figma.com/file/2j9esnIc8nTD6Ee6hyZnku/Meetsicians?type=design&node-id=708-3651&mode=design&t=AvUrV7xwkD7uOkPy-0" target="_blank">www.figma.com</MyWebsiteLink>
@@ -296,7 +296,7 @@ const MyWebsiteMobile = () => {
       <div>
       <DescriptionMobileSub>
         <FlexTitle>
-          <SubTitle>Mon interprétation desktop </SubTitle>
+          <SubTitle>Version desktop de mon site </SubTitle>
           <Year>2023</Year>
         </FlexTitle>
         <MyWebsiteLink href="https://www.figma.com/file/2j9esnIc8nTD6Ee6hyZnku/Meetsicians?type=design&node-id=708-3651&mode=design&t=AvUrV7xwkD7uOkPy-0" target="_blank">www.figma.com</MyWebsiteLink>
