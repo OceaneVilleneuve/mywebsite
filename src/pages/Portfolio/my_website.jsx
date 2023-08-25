@@ -191,7 +191,7 @@ const MyWebsiteDesktop = () => {
           <Year>2023</Year>
         </Flex>
           <MyWebsiteLink href="https://www.oceane-villeneuve.fr" target="_blank">www.oceane-villeneuve.fr</MyWebsiteLink>
-          <MyWebsiteLink href="https://www.figma.com/file/Xx9JH7NpAeIAawMUUxRzUt/mon-site?type=design&node-id=0-1&mode=design" target="_blank">www.figma.com</MyWebsiteLink>
+          <MyWebsiteLink href="https://www.figma.com/file/Xx9JH7NpAeIAawMUUxRzUt/mon-site?type=design&node-id=46-13&mode=design&t=DDJU7JLVMivVZjPf-0" target="_blank">www.figma.com</MyWebsiteLink>
         <DescriptionMywebsite>
         J'ai créé ce site pour offrir une vitrine interactive de mon parcours professionnel.
         En partageant mon CV et mon portfolio via une application React, je vise à présenter mes compétences de manière interactive.
@@ -222,7 +222,7 @@ const MyWebsiteDesktop = () => {
           <SubTitle>Mon site en version desktop - FIGMA </SubTitle>
           <SubYear>2023</SubYear>
         </Flex>
-        <MyWebsiteLink href="https://www.figma.com/file/2j9esnIc8nTD6Ee6hyZnku/Meetsicians?type=design&node-id=708-3651&mode=design&t=AvUrV7xwkD7uOkPy-0" target="_blank">www.figma.com</MyWebsiteLink>
+        <MyWebsiteLink href="https://www.figma.com/file/Xx9JH7NpAeIAawMUUxRzUt/mon-site?type=design&node-id=46-13&mode=design&t=DDJU7JLVMivVZjPf-0" target="_blank">www.figma.com</MyWebsiteLink>
       </DescriptionContainer>
       <div className="mt-5">
       <PictureMyWebsiteDesktop>
@@ -268,7 +268,7 @@ const MyWebsiteMobile = () => {
           </FlexTitleMobile>
           <FlexLinkWebsite>
             <MyWebsiteLinkMobile href="https://www.oceane-villeneuve.fr" target="_blank">www.oceane-villeneuve.fr</MyWebsiteLinkMobile>
-            <MyWebsiteLinkMobile href="https://www.figma.com/file/Xx9JH7NpAeIAawMUUxRzUt/mon-site?type=design&node-id=0-1&mode=design" target="_blank">www.figma.com</MyWebsiteLinkMobile>
+            <MyWebsiteLinkMobile href="https://www.figma.com/file/Xx9JH7NpAeIAawMUUxRzUt/mon-site?type=design&node-id=46-13&mode=design&t=DDJU7JLVMivVZjPf-0" target="_blank">www.figma.com</MyWebsiteLinkMobile>
           </FlexLinkWebsite>
           <DescriptionMyWebsiteMobile>
           J'ai créé ce site pour offrir une vitrine interactive de mon parcours professionnel.
@@ -299,7 +299,7 @@ const MyWebsiteMobile = () => {
           <SubTitle>Version desktop de mon site </SubTitle>
           <Year>2023</Year>
         </FlexTitle>
-        <MyWebsiteLink href="https://www.figma.com/file/2j9esnIc8nTD6Ee6hyZnku/Meetsicians?type=design&node-id=708-3651&mode=design&t=AvUrV7xwkD7uOkPy-0" target="_blank">www.figma.com</MyWebsiteLink>
+        <MyWebsiteLink href="https://www.figma.com/file/Xx9JH7NpAeIAawMUUxRzUt/mon-site?type=design&node-id=46-13&mode=design&t=DDJU7JLVMivVZjPf-0" target="_blank">www.figma.com</MyWebsiteLink>
       </DescriptionMobileSub>
       <PictureMyWebsiteDesktopMobileVersion>
         <Carousel interval={null} activeIndex={indexCarousel2} onSelect={handleSelectCarousel2} indicators={false}>
