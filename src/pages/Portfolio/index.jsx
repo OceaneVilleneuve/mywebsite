@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import Meetsicians from './meetsicians';
 import Airdnd from './airdnd'; // Import your project components
 import MyWebsite from './my_website';
+import AlexaStudioCreation from './alexastudiocreation';
+import Ferd from './ferd';
 import { useMediaQuery } from 'react-responsive';
 
 const PortfolioContainer = styled.div`
@@ -74,6 +76,8 @@ const PortfolioDesktop = () => {
     { id: 'meetsicians', title: 'Meetsicians' },
     { id: 'airdnd', title: 'Air DnD' },
     { id: 'mywebsite', title: 'Mon Site' },
+    { id: 'alexastudiocreation', title: 'Alexa Studio Creation' },
+    { id: 'ferd', title: 'Ferd' },
     // Add more projects
   ];
 
@@ -103,6 +107,8 @@ const PortfolioDesktop = () => {
         {activeProject === 'meetsicians' && <Meetsicians />}
         {activeProject === 'airdnd' && <Airdnd />}
         {activeProject === 'mywebsite' && <MyWebsite />}
+        {activeProject === 'alexastudiocreation' && <AlexaStudioCreation />}
+        {activeProject === 'ferd' && <Ferd />}
       </Projects>
     </PortfolioContainer>
   );
@@ -115,6 +121,8 @@ const PortfolioMobile = () => {
     { id: 'meetsicians', title: 'Meetsicians' },
     { id: 'airdnd', title: 'Air DnD' },
     { id: 'mywebsite', title: 'Mon Site' },
+    { id: 'alexastudiocreation', title: 'Alexa Studio Creation' },
+    { id: 'ferd', title: 'Ferd' },
     // Add more projects
   ];
 
@@ -143,6 +151,8 @@ const PortfolioMobile = () => {
         {activeProject === 'meetsicians' && <Meetsicians />}
         {activeProject === 'airdnd' && <Airdnd />}
         {activeProject === 'mywebsite' && <MyWebsite />}
+        {activeProject === 'alexastudiocreation' && <AlexaStudioCreation />}
+        {activeProject === 'ferd' && <Ferd />}
       </ProjectsMobile>
     </>
   );
