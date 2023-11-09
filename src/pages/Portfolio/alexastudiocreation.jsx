@@ -174,7 +174,7 @@ const dataMyWebsiteMobile = [
 const dataMyWebsite = [
   { imageWebsite: require('../../assets/acceuil-alexa.png'), },
   { imageWebsite:require('../../assets/menu.png'), },
-  { imageWebsite:require('../../assets/menu-déplié.png'), },
+  { imageWebsite:require('../../assets/menu-déplie.png'), },
   { imageWebsite:require('../../assets/mariage-photo.png'), },
   { imageWebsite:require('../../assets/video-mariage.png'), },
   { imageWebsite:require('../../assets/prise-rdv.png'), },
