@@ -76,8 +76,8 @@ const PortfolioDesktop = () => {
     { id: 'meetsicians', title: 'Meetsicians' },
     { id: 'airdnd', title: 'Air DnD' },
     { id: 'mywebsite', title: 'Mon Site' },
-    { id: 'alexastudiocreation', title: 'Alexa Studio Creation' },
     { id: 'ferd', title: 'Ferd' },
+    { id: 'alexastudiocreation', title: 'Alexa Studio Creation' },
     // Add more projects
   ];
 
@@ -107,8 +107,8 @@ const PortfolioDesktop = () => {
         {activeProject === 'meetsicians' && <Meetsicians />}
         {activeProject === 'airdnd' && <Airdnd />}
         {activeProject === 'mywebsite' && <MyWebsite />}
-        {activeProject === 'alexastudiocreation' && <AlexaStudioCreation />}
         {activeProject === 'ferd' && <Ferd />}
+        {activeProject === 'alexastudiocreation' && <AlexaStudioCreation />}
       </Projects>
     </PortfolioContainer>
   );
@@ -121,8 +121,8 @@ const PortfolioMobile = () => {
     { id: 'meetsicians', title: 'Meetsicians' },
     { id: 'airdnd', title: 'Air DnD' },
     { id: 'mywebsite', title: 'Mon Site' },
-    { id: 'alexastudiocreation', title: 'Alexa Studio Creation' },
     { id: 'ferd', title: 'Ferd' },
+    { id: 'alexastudiocreation', title: 'Alexa Studio Creation' },
     // Add more projects
   ];
 
@@ -151,8 +151,8 @@ const PortfolioMobile = () => {
         {activeProject === 'meetsicians' && <Meetsicians />}
         {activeProject === 'airdnd' && <Airdnd />}
         {activeProject === 'mywebsite' && <MyWebsite />}
-        {activeProject === 'alexastudiocreation' && <AlexaStudioCreation />}
         {activeProject === 'ferd' && <Ferd />}
+        {activeProject === 'alexastudiocreation' && <AlexaStudioCreation />}
       </ProjectsMobile>
     </>
   );

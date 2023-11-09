@@ -39,7 +39,7 @@ const DescriptionMywebsite = styled.p`
 
 const PictureMyWebsite = styled.img`
   height: 29em;
-  width: 34em;
+  width: 38em;
 `
 const PictureContainer = styled.div`
   width: 241px;
@@ -48,20 +48,20 @@ const PictureContainer = styled.div`
   `
 
 const PictureMyWebsiteDesktop = styled.div`
-  width: 545px;
+  width: 609px;
   display: flex;
   border: 0.5px solid black;
 `
 
-const MyWebsiteLink = styled.a`
-  font-family: 'Roboto Mono',monospace;
-  text-decoration: none;
-  font-weight: lighter;
-  font-size: 13px;
-  font-style: italic;
-  margin-right: 4em;
-  color: ${colors.fourth};
-`
+// const MyWebsiteLink = styled.a`
+//   font-family: 'Roboto Mono',monospace;
+//   text-decoration: none;
+//   font-weight: lighter;
+//   font-size: 13px;
+//   font-style: italic;
+//   margin-right: 4em;
+//   color: ${colors.fourth};
+// `
 
 const MyWebsitePageMobile = styled.div`
   min-height: 100vh;
@@ -88,7 +88,6 @@ const MobileFlex =styled.div`
 const PictureMyWebsiteMobile = styled.img`
   height: 19em;
   width: 22em;
-  object-fit: cover;
 `
 const PictureMyWebsiteMobileDesktopVersion = styled.img`
   height: 31em;
@@ -132,14 +131,14 @@ const FlexLinkWebsite = styled.p`
   align-content: center;
 `
 
-const MyWebsiteLinkMobile = styled.a`
-  font-family: 'Roboto Mono',monospace;
-  text-decoration: none;
-  font-weight: lighter;
-  font-size: 13px;
-  font-style: italic;
-  color: ${colors.fourth};
-`
+// const MyWebsiteLinkMobile = styled.a`
+//   font-family: 'Roboto Mono',monospace;
+//   text-decoration: none;
+//   font-weight: lighter;
+//   font-size: 13px;
+//   font-style: italic;
+//   color: ${colors.fourth};
+// `
 const PictureContainerMobile = styled.div`
   width: 241px;
   display: flex;
@@ -156,17 +155,34 @@ const FlexTitle = styled.div`
   justify-content: center;
 `
 const dataMyWebsiteMobile = [
-  { imageWebsiteMobile: require('../../assets/mywebsitemobile.png'), },
-  { imageWebsiteMobile:require('../../assets/mywebsitemobile2.png'), },
-  { imageWebsiteMobile:require('../../assets/mywebsitemobile3.png'), },
+  { imageWebsiteMobile: require('../../assets/acceuil-mobile.png'), },
+  { imageWebsiteMobile:require('../../assets/en-savoir-plus.png'),},
+  { imageWebsiteMobile:require('../../assets/menu-mobile.png'), },
+  { imageWebsiteMobile:require('../../assets/menu-photo-m.png'), },
+  { imageWebsiteMobile: require('../../assets/mariage-mobile.png'), },
+  { imageWebsiteMobile:require('../../assets/menu-video-mobile.png'), },
+  { imageWebsiteMobile:require('../../assets/video-mariage-mobile.png'), },
+  { imageWebsiteMobile: require('../../assets/rdv-mil.png'), },
+  { imageWebsiteMobile:require('../../assets/rdv-milieu.png'), },
+  { imageWebsiteMobile:require('../../assets/info-mobile.png'), },
+  { imageWebsiteMobile: require('../../assets/efectue.png'), },
+  { imageWebsiteMobile:require('../../assets/prestation-mobile-before.png'), },
+  { imageWebsiteMobile:require('../../assets/prestation-mobile.png'), },
+  { imageWebsiteMobile:require('../../assets/a-propos-mobile.png'), },
 ];
 
 const dataMyWebsite = [
-  { imageWebsite: require('../../assets/mywebsite.png'), },
-  { imageWebsite:require('../../assets/mywebsite2.png'), },
-  { imageWebsite:require('../../assets/mywebsite3.png'), },
-  { imageWebsite:require('../../assets/mywebsite4.png'), },
-  { imageWebsite:require('../../assets/mywebsite5.png'), },
+  { imageWebsite: require('../../assets/acceuil-alexa.png'), },
+  { imageWebsite:require('../../assets/menu.png'), },
+  { imageWebsite:require('../../assets/menu-déplié.png'), },
+  { imageWebsite:require('../../assets/mariage-photo.png'), },
+  { imageWebsite:require('../../assets/video-mariage.png'), },
+  { imageWebsite:require('../../assets/prise-rdv.png'), },
+  { imageWebsite:require('../../assets/prise-rdv-milieu.png'), },
+  { imageWebsite:require('../../assets/informations.png'), },
+  { imageWebsite:require('../../assets/prise-rdv-effectue.png'), },
+  { imageWebsite:require('../../assets/a-propos.png'), },
+  { imageWebsite:require('../../assets/prestations.png'), },
 ];
 
 const MyWebsiteDesktop = () => {
@@ -187,21 +203,21 @@ const MyWebsiteDesktop = () => {
       <Flex>
       <DescriptionContainer>
         <Flex>
-          <Title>Mon application</Title>
+          <Title>Alexa Studio création</Title>
           <Year>2023</Year>
         </Flex>
-          <MyWebsiteLink href="https://www.oceane-villeneuve.fr" target="_blank">www.oceane-villeneuve.fr</MyWebsiteLink>
-          <MyWebsiteLink href="https://www.figma.com/file/Xx9JH7NpAeIAawMUUxRzUt/mon-site?type=design&node-id=46-13&mode=design" target="_blank">www.figma.com</MyWebsiteLink>
+          {/* <MyWebsiteLink href="" target="_blank">www.oceane-villeneuve.fr</MyWebsiteLink> */}
         <DescriptionMywebsite>
-        J'ai créé ce site pour offrir une vitrine interactive de mon parcours professionnel.
-        En partageant mon CV et mon portfolio via une application React, je vise à présenter mes compétences de manière interactive.
-        L'intégration d'un formulaire de contact avec Email.js facilite les échanges avec les visiteurs intéressés.
+        J'ai créer cette maquette à la demande d'Alexa, une jeune photographe et vidéaste qui a besoin d'un site afin de
+        donner plus de visibilité à son art et acquérir une nouvelle clientèle.
         <br/>
-        En ce qui concerne l'UX-UI, j'ai conçu une maquette sur Figma en version desktop, que j'ai adaptée pour mobile en
-        utilisant le principe du responsive design, garantissant ainsi une expérience utilisateur optimale.
+        En ce qui concerne l'UX-UI, j'ai conçu une maquette sur Figma en version mobile, que j'ai adaptée pour desktop en
+        utilisant le principe du mobile first, garantissant ainsi une expérience utilisateur optimale.
         <br/>
-        Mon objectif est de fournir une plateforme permettant de présenter mes compétences et expériences professionnelles.
-        Et aussi de permettre à toute personne intéressée par mon profil de me contacter facilement.
+        Pour le design et la colorimétrie j'ai décidé de me référer aux prospectus ainsi qu'au réseau sociaux d'Alexa qui comporte du vert
+        sauge et du violet pastel. Ainsi qu'aux pages et informations demandés par Alexa.
+        <br/>
+        Nous venons actuellement de valider la maquette. Ma prochaine étape est de concevoir son site.
         </DescriptionMywebsite>
     </DescriptionContainer>
     <PictureContainer>
@@ -219,10 +235,10 @@ const MyWebsiteDesktop = () => {
     <>
     <DescriptionContainer className="mt-5">
         <Flex>
-          <SubTitle>Mon site en version desktop - FIGMA </SubTitle>
+          <SubTitle>Alexa Studio Création desktop - FIGMA </SubTitle>
           <SubYear>2023</SubYear>
         </Flex>
-        <MyWebsiteLink href="https://www.figma.com/file/Xx9JH7NpAeIAawMUUxRzUt/mon-site?type=design&node-id=0-1&mode=design" target="_blank">www.figma.com</MyWebsiteLink>
+        {/* <MyWebsiteLink href="https://www.figma.com/file/Xx9JH7NpAeIAawMUUxRzUt/mon-site?type=design&node-id=0-1&mode=design" target="_blank">www.figma.com</MyWebsiteLink> */}
       </DescriptionContainer>
       <div className="mt-5">
       <PictureMyWebsiteDesktop>
@@ -263,22 +279,24 @@ const MyWebsiteMobile = () => {
       <MobileFlex>
         <DescriptionContainerMobile>
           <FlexTitleMobile>
-            <Title>Mon application</Title>
+            <Title>Alexa Studio Création</Title>
             <Year>2023</Year>
           </FlexTitleMobile>
           <FlexLinkWebsite>
-            <MyWebsiteLinkMobile href="https://www.oceane-villeneuve.fr" target="_blank">www.oceane-villeneuve.fr</MyWebsiteLinkMobile>
-            <MyWebsiteLinkMobile href="https://www.figma.com/file/Xx9JH7NpAeIAawMUUxRzUt/mon-site?type=design&node-id=46-13&mode=design" target="_blank">www.figma.com</MyWebsiteLinkMobile>
+            {/* <MyWebsiteLinkMobile href="https://www.oceane-villeneuve.fr" target="_blank">www.oceane-villeneuve.fr</MyWebsiteLinkMobile>
+            <MyWebsiteLinkMobile href="https://www.figma.com/file/Xx9JH7NpAeIAawMUUxRzUt/mon-site?type=design&node-id=46-13&mode=design" target="_blank">www.figma.com</MyWebsiteLinkMobile> */}
           </FlexLinkWebsite>
           <DescriptionMyWebsiteMobile>
-          J'ai créé ce site pour offrir une vitrine interactive de mon parcours professionnel.
-          En partageant mon CV et mon portfolio via une application React, je vise à présenter mes compétences de manière interactive.
-          L'intégration d'un formulaire de contact avec Email.js facilite les échanges avec les visiteurs intéressés.
-          <br/>
-          En ce qui concerne l'UX-UI, j'ai conçu une maquette sur Figma en version desktop, que j'ai adaptée pour mobile en
-          utilisant le principe du responsive design, garantissant ainsi une expérience utilisateur optimale.
-          <br/>
-          Mon objectif est de fournir une plateforme permettant de présenter mes compétences et expériences professionnelles de manière convaincante.
+            J'ai créer cette maquette à la demande d'Alexa, une jeune photographe et vidéaste qui a besoin d'un site afin de
+            donner plus de visibilité à son art et acquérir une nouvelle clientèle.
+            <br/>
+            En ce qui concerne l'UX-UI, j'ai conçu une maquette sur Figma en version mobile, que j'ai adaptée pour desktop en
+            utilisant le principe du mobile first, garantissant ainsi une expérience utilisateur optimale.
+            <br/>
+            Pour le design et la colorimétrie j'ai décidé de me référer aux prospectus ainsi qu'au réseau sociaux d'Alexa qui comporte du vert
+            sauge et du violet pastel. Ainsi qu'aux pages et informations demandés par Alexa.
+            <br/>
+            Nous venons actuellement de valider la maquette. Ma prochaine étape est de concevoir son site.
           </DescriptionMyWebsiteMobile>
       </DescriptionContainerMobile>
       <PictureContainerMobile>
@@ -296,10 +314,10 @@ const MyWebsiteMobile = () => {
       <div>
       <DescriptionMobileSub>
         <FlexTitle>
-          <SubTitle>Version desktop de mon site </SubTitle>
+          <SubTitle>Alexa Studio création desktop - FIGMA </SubTitle>
           <Year>2023</Year>
         </FlexTitle>
-        <MyWebsiteLink href="https://www.figma.com/file/Xx9JH7NpAeIAawMUUxRzUt/mon-site?type=design&node-id=0-1&mode=design" target="_blank">www.figma.com</MyWebsiteLink>
+        {/* <MyWebsiteLink href="https://www.figma.com/file/Xx9JH7NpAeIAawMUUxRzUt/mon-site?type=design&node-id=0-1&mode=design" target="_blank">www.figma.com</MyWebsiteLink> */}
       </DescriptionMobileSub>
       <PictureMyWebsiteDesktopMobileVersion>
         <Carousel interval={null} activeIndex={indexCarousel2} onSelect={handleSelectCarousel2} indicators={false}>

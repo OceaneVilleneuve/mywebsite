@@ -193,15 +193,15 @@ const MyWebsiteDesktop = () => {
           <MyWebsiteLink href="https://www.oceane-villeneuve.fr" target="_blank">www.oceane-villeneuve.fr</MyWebsiteLink>
           <MyWebsiteLink href="https://www.figma.com/file/Xx9JH7NpAeIAawMUUxRzUt/mon-site?type=design&node-id=46-13&mode=design" target="_blank">www.figma.com</MyWebsiteLink>
         <DescriptionMywebsite>
-        J'ai créé ce site pour offrir une vitrine interactive de mon parcours professionnel.
-        En partageant mon CV et mon portfolio via une application React, je vise à présenter mes compétences de manière interactive.
-        L'intégration d'un formulaire de contact avec Email.js facilite les échanges avec les visiteurs intéressés.
-        <br/>
-        En ce qui concerne l'UX-UI, j'ai conçu une maquette sur Figma en version desktop, que j'ai adaptée pour mobile en
-        utilisant le principe du responsive design, garantissant ainsi une expérience utilisateur optimale.
-        <br/>
-        Mon objectif est de fournir une plateforme permettant de présenter mes compétences et expériences professionnelles.
-        Et aussi de permettre à toute personne intéressée par mon profil de me contacter facilement.
+          J'ai créé ce site pour offrir une vitrine interactive de mon parcours professionnel.
+          En partageant mon CV et mon portfolio via une application React, je vise à présenter mes compétences de manière interactive.
+          L'intégration d'un formulaire de contact avec Email.js facilite les échanges avec les visiteurs intéressés.
+          <br/>
+          En ce qui concerne l'UX-UI, j'ai conçu une maquette sur Figma en version desktop, que j'ai adaptée pour mobile en
+          utilisant le principe du responsive design, garantissant ainsi une expérience utilisateur optimale.
+          <br/>
+          Mon objectif est de fournir une plateforme permettant de présenter mes compétences et expériences professionnelles.
+          Et aussi de permettre à toute personne intéressée par mon profil de me contacter facilement.
         </DescriptionMywebsite>
     </DescriptionContainer>
     <PictureContainer>
@@ -278,7 +278,8 @@ const MyWebsiteMobile = () => {
           En ce qui concerne l'UX-UI, j'ai conçu une maquette sur Figma en version desktop, que j'ai adaptée pour mobile en
           utilisant le principe du responsive design, garantissant ainsi une expérience utilisateur optimale.
           <br/>
-          Mon objectif est de fournir une plateforme permettant de présenter mes compétences et expériences professionnelles de manière convaincante.
+          Mon objectif est de fournir une plateforme permettant de présenter mes compétences et expériences professionnelles.
+          Et aussi de permettre à toute personne intéressée par mon profil de me contacter facilement.
           </DescriptionMyWebsiteMobile>
       </DescriptionContainerMobile>
       <PictureContainerMobile>

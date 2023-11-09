@@ -53,15 +53,15 @@ const PictureMyWebsiteDesktop = styled.div`
   border: 0.5px solid black;
 `
 
-const MyWebsiteLink = styled.a`
-  font-family: 'Roboto Mono',monospace;
-  text-decoration: none;
-  font-weight: lighter;
-  font-size: 13px;
-  font-style: italic;
-  margin-right: 4em;
-  color: ${colors.fourth};
-`
+// const MyWebsiteLink = styled.a`
+//   font-family: 'Roboto Mono',monospace;
+//   text-decoration: none;
+//   font-weight: lighter;
+//   font-size: 13px;
+//   font-style: italic;
+//   margin-right: 4em;
+//   color: ${colors.fourth};
+// `
 
 const MyWebsitePageMobile = styled.div`
   min-height: 100vh;
@@ -132,14 +132,14 @@ const FlexLinkWebsite = styled.p`
   align-content: center;
 `
 
-const MyWebsiteLinkMobile = styled.a`
-  font-family: 'Roboto Mono',monospace;
-  text-decoration: none;
-  font-weight: lighter;
-  font-size: 13px;
-  font-style: italic;
-  color: ${colors.fourth};
-`
+// const MyWebsiteLinkMobile = styled.a`
+//   font-family: 'Roboto Mono',monospace;
+//   text-decoration: none;
+//   font-weight: lighter;
+//   font-size: 13px;
+//   font-style: italic;
+//   color: ${colors.fourth};
+// `
 const PictureContainerMobile = styled.div`
   width: 241px;
   display: flex;
@@ -156,17 +156,19 @@ const FlexTitle = styled.div`
   justify-content: center;
 `
 const dataMyWebsiteMobile = [
-  { imageWebsiteMobile: require('../../assets/mywebsitemobile.png'), },
-  { imageWebsiteMobile:require('../../assets/mywebsitemobile2.png'), },
-  { imageWebsiteMobile:require('../../assets/mywebsitemobile3.png'), },
+  { imageWebsiteMobile: require('../../assets/ferd-mobile.png'), },
+  { imageWebsiteMobile:require('../../assets/frise-end-mobile.png'), },
+  { imageWebsiteMobile:require('../../assets/contact-ferd-mobile.png'), },
+  { imageWebsiteMobile: require('../../assets/ferd-work-mobile.png'), },
 ];
 
 const dataMyWebsite = [
-  { imageWebsite: require('../../assets/mywebsite.png'), },
-  { imageWebsite:require('../../assets/mywebsite2.png'), },
-  { imageWebsite:require('../../assets/mywebsite3.png'), },
-  { imageWebsite:require('../../assets/mywebsite4.png'), },
-  { imageWebsite:require('../../assets/mywebsite5.png'), },
+  { imageWebsite: require('../../assets/ferd.png'), },
+  { imageWebsite:require('../../assets/info-frise-ferd.png'), },
+  { imageWebsite:require('../../assets/frise-ferd.png'), },
+  { imageWebsite:require('../../assets/frise-end.png'), },
+  { imageWebsite:require('../../assets/contact-ferd.png'), },
+  { imageWebsite:require('../../assets/ferd-work.png'), },
 ];
 
 const MyWebsiteDesktop = () => {
@@ -190,18 +192,20 @@ const MyWebsiteDesktop = () => {
           <Title>Ferd</Title>
           <Year>2023</Year>
         </Flex>
-          <MyWebsiteLink href="https://www.oceane-villeneuve.fr" target="_blank">www.oceane-villeneuve.fr</MyWebsiteLink>
-          <MyWebsiteLink href="https://www.figma.com/file/Xx9JH7NpAeIAawMUUxRzUt/mon-site?type=design&node-id=46-13&mode=design" target="_blank">www.figma.com</MyWebsiteLink>
+          {/* <MyWebsiteLink href="https://www.oceane-villeneuve.fr" target="_blank">www.oceane-villeneuve.fr</MyWebsiteLink>
+          <MyWebsiteLink href="https://www.figma.com/file/Xx9JH7NpAeIAawMUUxRzUt/mon-site?type=design&node-id=46-13&mode=design" target="_blank">www.figma.com</MyWebsiteLink> */}
         <DescriptionMywebsite>
-        J'ai créé ce site pour offrir une vitrine interactive de mon parcours professionnel.
-        En partageant mon CV et mon portfolio via une application React, je vise à présenter mes compétences de manière interactive.
-        L'intégration d'un formulaire de contact avec Email.js facilite les échanges avec les visiteurs intéressés.
-        <br/>
-        En ce qui concerne l'UX-UI, j'ai conçu une maquette sur Figma en version desktop, que j'ai adaptée pour mobile en
-        utilisant le principe du responsive design, garantissant ainsi une expérience utilisateur optimale.
-        <br/>
-        Mon objectif est de fournir une plateforme permettant de présenter mes compétences et expériences professionnelles.
-        Et aussi de permettre à toute personne intéressée par mon profil de me contacter facilement.
+          Pour ce site j'ai été contacté par Ferdinand afin de réaliser la maquette de son site portfolio en tant que réalisateur et
+          vidéaste.
+          Ce site est créer en colaboration avec Ferdinand car il sera réalisé en pair-programming.
+          <br/>
+          En ce qui concerne l'UX-UI, Je me suis inspiré de l'univers cyberpunk et des couleurs
+          vert et noir suite aux demande de Ferdinand. J'ai conçu une maquette sur Figma en version desktop, que j'ai adaptée pour mobile en
+          utilisant le principe du responsive design.
+          <br/>
+          Le but est par la suite d'ajouter des animations et effet de parallax a la page.
+          <br/>
+          Mon objectif est de fournir une plateforme permettant à Ferdinand de présenter son travail de façon simple avec un design très marqué.
         </DescriptionMywebsite>
     </DescriptionContainer>
     <PictureContainer>
@@ -219,10 +223,10 @@ const MyWebsiteDesktop = () => {
     <>
     <DescriptionContainer className="mt-5">
         <Flex>
-          <SubTitle>Mon site en version desktop - FIGMA </SubTitle>
+          <SubTitle>Ferd version desktop - FIGMA </SubTitle>
           <SubYear>2023</SubYear>
         </Flex>
-        <MyWebsiteLink href="https://www.figma.com/file/Xx9JH7NpAeIAawMUUxRzUt/mon-site?type=design&node-id=0-1&mode=design" target="_blank">www.figma.com</MyWebsiteLink>
+        {/* <MyWebsiteLink href="https://www.figma.com/file/Xx9JH7NpAeIAawMUUxRzUt/mon-site?type=design&node-id=0-1&mode=design" target="_blank">www.figma.com</MyWebsiteLink> */}
       </DescriptionContainer>
       <div className="mt-5">
       <PictureMyWebsiteDesktop>
@@ -263,22 +267,25 @@ const MyWebsiteMobile = () => {
       <MobileFlex>
         <DescriptionContainerMobile>
           <FlexTitleMobile>
-            <Title>Mon application</Title>
+            <Title>Ferd</Title>
             <Year>2023</Year>
           </FlexTitleMobile>
           <FlexLinkWebsite>
-            <MyWebsiteLinkMobile href="https://www.oceane-villeneuve.fr" target="_blank">www.oceane-villeneuve.fr</MyWebsiteLinkMobile>
-            <MyWebsiteLinkMobile href="https://www.figma.com/file/Xx9JH7NpAeIAawMUUxRzUt/mon-site?type=design&node-id=46-13&mode=design" target="_blank">www.figma.com</MyWebsiteLinkMobile>
+            {/* <MyWebsiteLinkMobile href="https://www.oceane-villeneuve.fr" target="_blank">www.oceane-villeneuve.fr</MyWebsiteLinkMobile>
+            <MyWebsiteLinkMobile href="https://www.figma.com/file/Xx9JH7NpAeIAawMUUxRzUt/mon-site?type=design&node-id=46-13&mode=design" target="_blank">www.figma.com</MyWebsiteLinkMobile> */}
           </FlexLinkWebsite>
           <DescriptionMyWebsiteMobile>
-          J'ai créé ce site pour offrir une vitrine interactive de mon parcours professionnel.
-          En partageant mon CV et mon portfolio via une application React, je vise à présenter mes compétences de manière interactive.
-          L'intégration d'un formulaire de contact avec Email.js facilite les échanges avec les visiteurs intéressés.
-          <br/>
-          En ce qui concerne l'UX-UI, j'ai conçu une maquette sur Figma en version desktop, que j'ai adaptée pour mobile en
-          utilisant le principe du responsive design, garantissant ainsi une expérience utilisateur optimale.
-          <br/>
-          Mon objectif est de fournir une plateforme permettant de présenter mes compétences et expériences professionnelles de manière convaincante.
+            Pour ce site j'ai été contacté par Ferdinand afin de réaliser la maquette de son site portfolio en tant que réalisateur et
+            vidéaste.
+            Ce site est créer en colaboration avec Ferdinand car il sera réalisé en pair-programming.
+            <br/>
+            En ce qui concerne l'UX-UI, Je me suis inspiré de l'univers cyberpunk et des couleurs
+            vert et noir suite aux demande de Ferdinand. J'ai conçu une maquette sur Figma en version desktop, que j'ai adaptée pour mobile en
+            utilisant le principe du responsive design.
+            <br/>
+            Le but est par la suite d'ajouter des animations et effet de parallax a la page.
+            <br/>
+            Mon objectif est de fournir une plateforme permettant à Ferdinand de présenter son travail de façon simple avec un design très marqué.
           </DescriptionMyWebsiteMobile>
       </DescriptionContainerMobile>
       <PictureContainerMobile>
@@ -296,10 +303,10 @@ const MyWebsiteMobile = () => {
       <div>
       <DescriptionMobileSub>
         <FlexTitle>
-          <SubTitle>Version desktop de mon site </SubTitle>
+          <SubTitle>Ferd version desktop - FIGMA </SubTitle>
           <Year>2023</Year>
         </FlexTitle>
-        <MyWebsiteLink href="https://www.figma.com/file/Xx9JH7NpAeIAawMUUxRzUt/mon-site?type=design&node-id=0-1&mode=design" target="_blank">www.figma.com</MyWebsiteLink>
+        {/* <MyWebsiteLink href="https://www.figma.com/file/Xx9JH7NpAeIAawMUUxRzUt/mon-site?type=design&node-id=0-1&mode=design" target="_blank">www.figma.com</MyWebsiteLink> */}
       </DescriptionMobileSub>
       <PictureMyWebsiteDesktopMobileVersion>
         <Carousel interval={null} activeIndex={indexCarousel2} onSelect={handleSelectCarousel2} indicators={false}>
