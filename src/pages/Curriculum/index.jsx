@@ -81,9 +81,9 @@ const DesktopCurriculum = () => {
   return (
     <div>
       <Bio>
-        Désirant réorienter ma carrière dans le développement web Front-end,je viens d'achever le bootcamp du Wagon à
-        Nantes. Je recherche mon premier emploi afin de pouvoir mettre en pratique mes compétences et accroître mes
-        qualifications.
+        Désirant réorienter ma carrière dans le développement web Front-end,j'ai achevé le bootcamp du Wagon à
+        Nantes en juillet 2023. Je recherche mon premier emploi  afin de pouvoir mettre en pratique mes compétences acquises lors
+        de mes projets et accroître mes qualifications.
       </Bio>
       <FlexContainer>
         <ColumnContainer>
@@ -105,6 +105,34 @@ const DesktopCurriculum = () => {
           </TextCurriculum>
           <TitleCurriculum>PROJETS</TitleCurriculum>
           <TextCurriculum>
+          <p>
+              <b>Ferd,</b>
+              <br/>
+              <span style={{color: "#536289", fontStyle: "italic"}}>10/2023</span>
+            </p>
+            <ul>
+                <PuceText>Conception de la maquette de l'application web portfolio d'un réalisateur
+                  de clip vidéo.
+                  <br/>
+                  Le développement de l'application web est réalisé en pair-programming.
+                </PuceText>
+                <PuceText>
+                  Mise en productiuceTexton de l'application incessamment sous peu.
+                </PuceText>
+            </ul>
+          <p>
+              <b>Alexa Studio Création,</b>
+              <br/>
+              <span style={{color: "#536289", fontStyle: "italic"}}>09/2023</span>
+            </p>
+              <ul>
+                  <PuceText>Conception de la maquette d'une l'application web
+                    portfolio pour une photographe ainsi que son développement.
+                  </PuceText>
+                  <PuceText>
+                    Mise en productiuceTexton de l'application incessamment sous peu.
+                  </PuceText>
+              </ul>
             <p>
               <b>Meetsicians,</b>
               <br/>
@@ -127,60 +155,35 @@ const DesktopCurriculum = () => {
                   </PuceText>
               </ul>
           </TextCurriculum>
-          <TitleCurriculum>COMPETENCES</TitleCurriculum>
-          <TextCurriculum>
-            <p>
-              <span style={{fontStyle: "italic"}}>Ruby on rails • JavaScript • REACT • HTML • CSS • ActiveRecords • PostegreSQL</span>
-            </p>
-          </TextCurriculum>
-          <TitleCurriculum>LOISIRS</TitleCurriculum>
-          <TextCurriculum>
-            <p>
-              <b>Musique</b> ( Chant, Basse, Composition )
-              <br/>
-              <b>Sport</b> ( Musculation )
-            </p>
-          </TextCurriculum>
         </ColumnContainer>
         <ColumnContainer>
           <TitleCurriculum>EXPERIENCES PROFESSIONNELLES RECENTES</TitleCurriculum>
           <TextCurriculum>
             <p>
-              <b>Développeur Full-Stack,</b> <span style={{color: "#536289", fontStyle: "italic"}}>Meetsicians, Air DnD </span>
+              <b>Développeur Full-Stack,</b> <span style={{color: "#536289", fontStyle: "italic"}}>Ferd, Alexa Studio Creation, Meetsicians, Air DnD </span>
               <br/>
               <span style={{color: "#536289"}}>07/2023 </span>
               <span style={{color: "#393939"}}>| Nantes, France</span>
             </p>
             <ul>
               <PuceText>Wireframe et design complet sur Figma. </PuceText>
-              <PuceText>Développement front-end : CSS, HTML, SASS et JavaScript. </PuceText>
+              <PuceText>Développement d'une application Wordpress. </PuceText>
+              <PuceText>Développement front-end : React, CSS, HTML, SASS et JavaScript. </PuceText>
               <PuceText>Développement back-end : PostgreSQL, Ruby on Rails, ActiveRecord. </PuceText>
               <PuceText>Création d'une base de données. </PuceText>
-              <PuceText>Pair programming. </PuceText>
+              <PuceText>Pair-programming. </PuceText>
               <PuceText>Création, développement et production d'une application.  </PuceText>
             </ul>
-            <p>
-              <b>Factrice,</b> <span style={{color: "#536289", fontStyle: "italic"}}>Adecco Industrie </span>
-              <br/>
-              <span style={{color: "#536289"}}>08/2018 </span>
-              <span style={{color: "#393939"}}>| Vertou, France</span>
-            </p>
-            <ul>
-                <PuceText>Organisation du circuit de livraison.</PuceText>
-                <PuceText>Relation client.  </PuceText>
-                <PuceText>Gestion des livraisons. </PuceText>
-            </ul>
-            <p>
-              <b>Livreuse Polyvalente,</b> <span style={{color: "#536289", fontStyle: "italic"}}> Dominos Pizza </span>
-              <br/>
-              <span style={{color: "#536289"}}>09/2016 - 08/2018 </span>
-              <span style={{color: "#393939"}}>| Orvault, France</span>
-            </p>
-            <ul>
-                <PuceText>Relation client.</PuceText>
-                <PuceText>Organisation et gestion des livraisons. </PuceText>
-            </ul>
           </TextCurriculum>
+          <TitleCurriculum>AUTRES EXPERIENCES PROFESSIONNELLES</TitleCurriculum>
+            <TextCurriculum>
+              <p>
+                <b>Factrice,</b> <span style={{color: "#536289", fontStyle: "italic"}}>Adecco Industrie </span>
+                <br/>
+                <span style={{color: "#536289"}}>08/2018 - 07/2023 </span>
+                <span style={{color: "#393939"}}>| Vertou, France</span>
+              </p>
+            </TextCurriculum>
           <TitleCurriculum>LANGUAGES</TitleCurriculum>
           <TextCurriculum>
             <p>
@@ -198,6 +201,20 @@ const DesktopCurriculum = () => {
               Native
             </p>
           </TextCurriculum>
+          <TitleCurriculum>COMPETENCES</TitleCurriculum>
+          <TextCurriculum>
+            <p>
+              <span style={{fontStyle: "italic"}}>Ruby on rails • JavaScript • REACT • HTML • CSS • ActiveRecords • PostegreSQL</span>
+            </p>
+          </TextCurriculum>
+          <TitleCurriculum>LOISIRS</TitleCurriculum>
+          <TextCurriculum>
+            <p>
+              <b>Musique</b> ( Chant, Basse, Composition )
+              <br/>
+              <b>Sport</b> ( Musculation )
+            </p>
+          </TextCurriculum>
         </ColumnContainer>
       </FlexContainer>
     </div>
@@ -208,9 +225,9 @@ const MobileCurriculum = () => {
   return (
     <div>
       <BioMobile>
-        Désirant réorienter ma carrière dans le développement web Front-end,je viens d'achever le bootcamp du Wagon à
-        Nantes. Je recherche mon premier emploi afin de pouvoir mettre en pratique mes compétences et accroître mes
-        qualifications.
+        Désirant réorienter ma carrière dans le développement web Front-end,j'ai achevé le bootcamp du Wagon à
+        Nantes en juillet 2023. Je recherche mon premier emploi  afin de pouvoir mettre en pratique mes compétences acquises lors
+        de mes projets et accroître mes qualifications.
       </BioMobile>
       <FlexContainer>
         <ColumnContainerMobile>
@@ -225,13 +242,59 @@ const MobileCurriculum = () => {
                 <PuceText>Titre RNCP Niveau 6</PuceText>
             </ul>
             <p>
-              <b>Baccalrauréat litteraire option anglais renforcée,</b> <span style={{color: "#536289", fontStyle: "italic"}}>Lycée Léonard de Vinci, 2014 </span>
+              <b>Baccalauréat littéraire option anglais renforcée,</b> <span style={{color: "#536289", fontStyle: "italic"}}>Lycée Léonard de Vinci, 2014 </span>
               <br/>
               <span style={{color: "#393939"}}>Monatigu, France</span>
             </p>
           </TextCurriculum>
+          <TitleCurriculum>EXPERIENCES PROFESSIONNELLES RECENTES</TitleCurriculum>
+          <TextCurriculum>
+            <p>
+              <b>Développeur Full-Stack,</b> <span style={{color: "#536289", fontStyle: "italic"}}>Ferd, Alexa Studio Création, Meetsicians, Air DnD </span>
+              <br/>
+              <span style={{color: "#536289"}}>07/2023 </span>
+              <span style={{color: "#393939"}}>| Nantes, France</span>
+            </p>
+            <ul>
+              <PuceText>Wireframe et design complet sur Figma. </PuceText>
+              <PuceText>Développement d'une application Wordpress. </PuceText>
+              <PuceText>Développement front-end : React, CSS, HTML, SASS et JavaScript. </PuceText>
+              <PuceText>Développement back-end : PostgreSQL, Ruby on Rails, ActiveRecord. </PuceText>
+              <PuceText>Création d'une base de données. </PuceText>
+              <PuceText>Pair-programming. </PuceText>
+              <PuceText>Création, développement et production d'une application.  </PuceText>
+            </ul>
+          </TextCurriculum>
           <TitleCurriculum>PROJETS</TitleCurriculum>
           <TextCurriculum>
+          <p>
+              <b>Ferd,</b>
+              <br/>
+              <span style={{color: "#536289", fontStyle: "italic"}}>10/2023</span>
+            </p>
+            <ul>
+                <PuceText>Conception de la maquette de l'application web portfolio d'un réalisateur
+                  de clip vidéo.
+                  <br/>
+                  Le développement de l'application web est réalisé en pair-programming.
+                </PuceText>
+                <PuceText>
+                  Mise en productiuceTexton de l'application incessamment sous peu.
+                </PuceText>
+            </ul>
+          <p>
+              <b>Alexa Studio Création,</b>
+              <br/>
+              <span style={{color: "#536289", fontStyle: "italic"}}>09/2023</span>
+            </p>
+              <ul>
+                  <PuceText>Conception de la maquette d'une l'application web
+                    portfolio pour une photographe ainsi que son développement.
+                  </PuceText>
+                  <PuceText>
+                  Mise en productiuceTexton de l'application incessamment sous peu.
+                </PuceText>
+              </ul>
             <p>
               <b>Meetsicians,</b>
               <br/>
@@ -254,76 +317,47 @@ const MobileCurriculum = () => {
                   </PuceText>
               </ul>
           </TextCurriculum>
-          <TitleCurriculum>COMPETENCES</TitleCurriculum>
-          <TextCurriculum>
-            <p>
-              <span style={{fontStyle: "italic"}}>Ruby on rails • JavaScript • REACT • HTML • CSS • ActiveRecords • PostegreSQL</span>
-            </p>
-          </TextCurriculum>
-          <TitleCurriculum>LOISIRS</TitleCurriculum>
-          <TextCurriculum>
-            <p>
-              <b>Musique</b> ( Chant, Basse, Composition )
-              <br/>
-              <b>Sport</b> ( Musculation )
-            </p>
-          </TextCurriculum>
         </ColumnContainerMobile>
         <ColumnContainerMobile>
-          <TitleCurriculum>EXPERIENCES PROFESSIONNELLES RECENTES</TitleCurriculum>
-          <TextCurriculum>
-            <p>
-              <b>Développeur Full-Stack,</b> <span style={{color: "#536289", fontStyle: "italic"}}>Meetsicians, Air DnD </span>
-              <br/>
-              <span style={{color: "#536289"}}>07/2023 </span>
-              <span style={{color: "#393939"}}>| Nantes, France</span>
-            </p>
-            <ul>
-              <PuceText>Wireframe et design complet sur Figma. </PuceText>
-              <PuceText>Développement front-end : CSS, HTML, SASS et JavaScript. </PuceText>
-              <PuceText>Développement back-end : PostgreSQL, Ruby on Rails, ActiveRecord. </PuceText>
-              <PuceText>Création d'une base de données. </PuceText>
-              <PuceText>Pair programming. </PuceText>
-              <PuceText>Création, développement et production d'une application.  </PuceText>
-            </ul>
-            <p>
-              <b>Factrice,</b> <span style={{color: "#536289", fontStyle: "italic"}}>Adecco Industrie </span>
-              <br/>
-              <span style={{color: "#536289"}}>08/2018 </span>
-              <span style={{color: "#393939"}}>| Vertou, France</span>
-            </p>
-            <ul>
-                <PuceText>Organisation du circuit de livraison.</PuceText>
-                <PuceText>Relation client.  </PuceText>
-                <PuceText>Gestion des livraisons. </PuceText>
-            </ul>
-            <p>
-              <b>Livreuse Polyvalente,</b> <span style={{color: "#536289", fontStyle: "italic"}}> Dominos Pizza </span>
-              <br/>
-              <span style={{color: "#536289"}}>09/2016 - 08/2018 </span>
-              <span style={{color: "#393939"}}>| Orvault, France</span>
-            </p>
-            <ul>
-                <PuceText>Relation client.</PuceText>
-                <PuceText>Organisation et gestion des livraisons. </PuceText>
-            </ul>
-          </TextCurriculum>
-          <TitleCurriculum>LANGUAGES</TitleCurriculum>
-          <TextCurriculum>
-            <p>
-              <b>Anglais</b>
-              <LanguageLevelEnglishMobile src={LevelEnglish}/>
-              <br/>
-              C1
-            </p>
-          </TextCurriculum>
-          <TextCurriculum>
-            <p>
-              <b>Français</b>
-              <LanguageLevelFrenchMobile src={LevelFrench}/>
-              <br/>
-              Native
-            </p>
+          <TitleCurriculum>AUTRES EXPERIENCES PROFESSIONNELLES</TitleCurriculum>
+            <TextCurriculum>
+              <p>
+                <b>Factrice,</b> <span style={{color: "#536289", fontStyle: "italic"}}>Adecco Industrie </span>
+                <br/>
+                <span style={{color: "#536289"}}>08/2018 - 07/2023 </span>
+                <span style={{color: "#393939"}}>| Vertou, France</span>
+              </p>
+            </TextCurriculum>
+            <TitleCurriculum>COMPETENCES</TitleCurriculum>
+            <TextCurriculum>
+              <p>
+                <span style={{fontStyle: "italic"}}>Ruby on rails • JavaScript • REACT • HTML • CSS • ActiveRecords • PostegreSQL</span>
+              </p>
+            </TextCurriculum>
+            <TitleCurriculum>LANGUAGES</TitleCurriculum>
+            <TextCurriculum>
+              <p>
+                <b>Anglais</b>
+                <LanguageLevelEnglishMobile src={LevelEnglish}/>
+                <br/>
+                C1
+              </p>
+            </TextCurriculum>
+            <TextCurriculum>
+              <p>
+                <b>Français</b>
+                <LanguageLevelFrenchMobile src={LevelFrench}/>
+                <br/>
+                Native
+              </p>
+            </TextCurriculum>
+            <TitleCurriculum>LOISIRS</TitleCurriculum>
+            <TextCurriculum>
+              <p>
+                <b>Musique</b> ( Chant, Basse, Composition )
+                <br/>
+                <b>Sport</b> ( Musculation )
+              </p>
           </TextCurriculum>
         </ColumnContainerMobile>
       </FlexContainer>
