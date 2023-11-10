@@ -98,7 +98,7 @@ const DesktopCurriculum = () => {
                 <PuceText>Titre RNCP Niveau 6</PuceText>
             </ul>
             <p>
-              <b>Baccalrauréat litteraire option anglais renforcée,</b> <span style={{color: "#536289", fontStyle: "italic"}}>Lycée Léonard de Vinci, 2014 </span>
+              <b>Baccalauréat littéraire option anglais renforcée,</b> <span style={{color: "#536289", fontStyle: "italic"}}>Lycée Léonard de Vinci, 2014 </span>
               <br/>
               <span style={{color: "#393939"}}>Montaigu, France</span>
             </p>
