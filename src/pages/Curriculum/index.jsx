@@ -204,7 +204,7 @@ const DesktopCurriculum = () => {
           <TitleCurriculum>COMPETENCES</TitleCurriculum>
           <TextCurriculum>
             <p>
-              <span style={{fontStyle: "italic"}}>Ruby on rails • JavaScript • REACT • HTML • CSS • ActiveRecords • PostegreSQL</span>
+              <span style={{fontStyle: "italic"}}>Ruby on rails • JavaScript • REACT • HTML • CSS • Bootstrap • ActiveRecords • PostegreSQL</span>
             </p>
           </TextCurriculum>
           <TitleCurriculum>LOISIRS</TitleCurriculum>
